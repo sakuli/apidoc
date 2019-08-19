@@ -96,7 +96,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="testcase.html#gettestsuitefolderpath" class="tsd-kind-icon">get<wbr>Test<wbr>Suite<wbr>Folder<wbr>Path</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="testcase.html#handleexception" class="tsd-kind-icon">handle<wbr>Exception</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="testcase.html#saveresult" class="tsd-kind-icon">save<wbr>Result</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="testcase.html#throwexecption" class="tsd-kind-icon">throw<wbr>Execption</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="testcase.html#throwexception" class="tsd-kind-icon">throw<wbr>Exception</a></li>
 							</ul>
 						</section>
 					</div>
@@ -110,7 +110,7 @@
 					<div class="tsd-signature tsd-kind-icon">_image<wbr>Paths<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L5">context/common/test-case/test-case.interface.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L5">context/common/test-case/test-case.interface.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -120,7 +120,7 @@
 					<div class="tsd-signature tsd-kind-icon">case<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L2">context/common/test-case/test-case.interface.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L2">context/common/test-case/test-case.interface.ts:2</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -130,7 +130,7 @@
 					<div class="tsd-signature tsd-kind-icon">critical<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L4">context/common/test-case/test-case.interface.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L4">context/common/test-case/test-case.interface.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -140,7 +140,7 @@
 					<div class="tsd-signature tsd-kind-icon">warning<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L3">context/common/test-case/test-case.interface.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L3">context/common/test-case/test-case.interface.ts:3</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -157,7 +157,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L7">context/common/test-case/test-case.interface.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L7">context/common/test-case/test-case.interface.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -180,9 +180,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L9">context/common/test-case/test-case.interface.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L21">context/common/test-case/test-case.interface.ts:21</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates the current current test step with the provided parameters and
+									finishes that step.</p>
+								</div>
+								<p>Immediately starts a new TestStep.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -196,6 +203,9 @@
 								</li>
 								<li>
 									<h5>forward: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>deprecated: The logic is handled by the dedicated forwarder</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -212,7 +222,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L22">context/common/test-case/test-case.interface.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L52">context/common/test-case/test-case.interface.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -229,7 +239,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L18">context/common/test-case/test-case.interface.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L40">context/common/test-case/test-case.interface.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -246,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L24">context/common/test-case/test-case.interface.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L54">context/common/test-case/test-case.interface.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -263,7 +273,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L26">context/common/test-case/test-case.interface.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L56">context/common/test-case/test-case.interface.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -280,9 +290,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L16">context/common/test-case/test-case.interface.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L38">context/common/test-case/test-case.interface.ts:38</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates an Errorscreenshot at the time the method is invoked
+									Then updates the current Testcase with the given Error</p>
+								</div>
+								<p>If there are cached test-step information, the current test-step will be updated
+									because otherwise <code>endOfStep</code> (which usually updates that information)
+								will not be invoked after the error is thrown</p>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
@@ -293,6 +312,9 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>e: <span class="tsd-signature-type">E</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>an Error object which is written to</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -303,19 +325,28 @@
 					<a name="saveresult" class="tsd-anchor"></a>
 					<h3>save<wbr>Result</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">save<wbr>Result<span class="tsd-signature-symbol">(</span>forward<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Result<span class="tsd-signature-symbol">(</span>forward<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L20">context/common/test-case/test-case.interface.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L50">context/common/test-case/test-case.interface.ts:50</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finishes the current TestStep and the the TestCase</p>
+								</div>
+								<p>If no error occurred during the TestCase all TestSteps are written to the cache.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>forward: <span class="tsd-signature-type">boolean</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> forward: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>deprecated: The logic is handled by the dedicated forwarder</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -323,16 +354,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="throwexecption" class="tsd-anchor"></a>
-					<h3>throw<wbr>Execption</h3>
+					<a name="throwexception" class="tsd-anchor"></a>
+					<h3>throw<wbr>Exception</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">throw<wbr>Execption<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, screenshot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">throw<wbr>Exception<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, screenshot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/85c7f7c/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L28">context/common/test-case/test-case.interface.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/common/test-case/test-case.interface.ts#L58">context/common/test-case/test-case.interface.ts:58</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -402,7 +433,7 @@
 								<a href="testcase.html#saveresult" class="tsd-kind-icon">save<wbr>Result</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="testcase.html#throwexecption" class="tsd-kind-icon">throw<wbr>Execption</a>
+								<a href="testcase.html#throwexception" class="tsd-kind-icon">throw<wbr>Exception</a>
 							</li>
 						</ul>
 					</li>
