@@ -64,6 +64,16 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>All methods of this interface are injected as global functions into Sakuli Scripts</p>
+					</div>
+					<p>It is inspired by <a href="https://sahipro.com/docs/sahi-apis/accessor-api-basics.html">Sahi Accessor API</a> and aims the most possible compatibility to it.</p>
+					<p>The main difference is that all the functions returns SahiElementQueries instead of element references. This gives Sakuli the opportunity to fetch
+					an element only when it is required (e.g. inside a <a href="actionapi.html#_click"><code>_click</code></a> action) or re-fetch it if becomes gets stale otherwise.</p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -194,9 +204,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L65">context/sahi/accessor/accessor-api.interface.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1007">context/sahi/accessor/accessor-api.interface.ts:1007</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a area element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>area</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -204,6 +220,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -220,9 +238,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L6">context/sahi/accessor/accessor-api.interface.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L22">context/sahi/accessor/accessor-api.interface.ts:22</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a query that resolves to the element which is currently focused</p>
+								</div>
+								<p>CSS: <code>:focus</code></p>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
 						</li>
 					</ul>
@@ -237,9 +261,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L54">context/sahi/accessor/accessor-api.interface.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L897">context/sahi/accessor/accessor-api.interface.ts:897</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a area element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>area</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -247,6 +277,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -263,9 +295,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L85">context/sahi/accessor/accessor-api.interface.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1242">context/sahi/accessor/accessor-api.interface.ts:1242</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a article element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>article</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -273,6 +311,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -289,9 +329,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L86">context/sahi/accessor/accessor-api.interface.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1252">context/sahi/accessor/accessor-api.interface.ts:1252</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a aside element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>aside</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -299,6 +345,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -315,9 +363,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L63">context/sahi/accessor/accessor-api.interface.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L987">context/sahi/accessor/accessor-api.interface.ts:987</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a blockqoute element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>blockqoute</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -325,6 +379,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -341,9 +397,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L59">context/sahi/accessor/accessor-api.interface.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L947">context/sahi/accessor/accessor-api.interface.ts:947</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a bold element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>b</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -351,6 +413,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -367,9 +431,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L27">context/sahi/accessor/accessor-api.interface.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L473">context/sahi/accessor/accessor-api.interface.ts:473</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a button by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>button</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Click Me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+										<p>Invoking a click on this button:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _click(_button(<span class="hljs-string">'Click Me'</span>));</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -377,6 +455,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -393,9 +473,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L9">context/sahi/accessor/accessor-api.interface.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L68">context/sahi/accessor/accessor-api.interface.ts:68</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches an element of <code>TagName</code> with <code>clsName</code> in it&#39;s <a href="https://developer.mozilla.org/de/docs/Web/API/Element/classList"><code>classList</code></a> attribute</p>
+								</div>
+								<p>Based on CSS selector: <code>tagName.clsName</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><br />Assuming this HTML-snippet:</p>
+										<pre><code class="language-HTML">    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"leading class2"</span>&gt;</span>Lorem ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+										<p>Can be highlighted like this:</p>
+										<pre><code class="language-typescript">   <span class="hljs-comment">// will highlight the paragraph above</span>
+   <span class="hljs-keyword">await</span> _highlight(_byClassName(<span class="hljs-string">'leading'</span>, <span class="hljs-string">'p'</span>));
+</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -403,6 +499,8 @@
 								</li>
 								<li>
 									<h5>tagName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -419,13 +517,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L7">context/sahi/accessor/accessor-api.interface.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L33">context/sahi/accessor/accessor-api.interface.ts:33</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches an element by it&#39;s <code>id</code> attribute.
+									If the <code>id</code> of an element i known and somehow stable in the dom (not generated by an CMS for example) this is the recommended way to query an element because it is the fastest.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>id of the element. Like <code>document.getElementById(id)</code></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -442,9 +549,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L8">context/sahi/accessor/accessor-api.interface.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L42">context/sahi/accessor/accessor-api.interface.ts:42</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches an element of <code>tagName</code> with the given <code>text</code></p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -452,6 +564,8 @@
 								</li>
 								<li>
 									<h5>tagName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -468,13 +582,32 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L10">context/sahi/accessor/accessor-api.interface.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L90">context/sahi/accessor/accessor-api.interface.ts:90</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches an element by a <a href="https://www.w3schools.com/xml/xpath_syntax.asp">xPath-expression</a> on the current webpage.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Item 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+										<p>Fetching the second item from the list:</p>
+										<pre><code class="language-typescript">    <span class="hljs-keyword">const</span> item2 = <span class="hljs-keyword">await</span> _fetch(_byXPath(<span class="hljs-string">'/ul/li[2]'</span>));</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>xPath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -491,9 +624,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L64">context/sahi/accessor/accessor-api.interface.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L997">context/sahi/accessor/accessor-api.interface.ts:997</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a canvas element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>canvas</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -501,6 +640,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -517,9 +658,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L38">context/sahi/accessor/accessor-api.interface.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L706">context/sahi/accessor/accessor-api.interface.ts:706</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a table-data element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>td</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -527,6 +674,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -543,9 +692,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L28">context/sahi/accessor/accessor-api.interface.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L498">context/sahi/accessor/accessor-api.interface.ts:498</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a checkbox field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;checkbox&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"like-pizza"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Like Pizza?<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></code></pre>
+										<p>Checking the field with <a href="mouseactionapi.html#_check"><code>_check</code></a>:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _check(_checkbox(<span class="hljs-string">'like-pizza'</span>));</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -553,6 +719,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -569,9 +737,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L62">context/sahi/accessor/accessor-api.interface.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L977">context/sahi/accessor/accessor-api.interface.ts:977</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a code element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>code</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -579,6 +753,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -595,9 +771,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L74">context/sahi/accessor/accessor-api.interface.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1132">context/sahi/accessor/accessor-api.interface.ts:1132</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a definition-description element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>dd</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -605,6 +787,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -621,9 +805,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L72">context/sahi/accessor/accessor-api.interface.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1112">context/sahi/accessor/accessor-api.interface.ts:1112</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a definition-list element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>dl</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -631,6 +821,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -647,9 +839,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L73">context/sahi/accessor/accessor-api.interface.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1122">context/sahi/accessor/accessor-api.interface.ts:1122</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a definition-term element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>dt</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -657,6 +855,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -673,9 +873,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L14">context/sahi/accessor/accessor-api.interface.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L182">context/sahi/accessor/accessor-api.interface.ts:182</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a date field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;date&quot;]</code></p>
+								<p>If you want to set a value on this element please consider the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date">supported formats</a></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"date"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"date-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_datebox(<span class="hljs-string">'date-input'</span>), <span class="hljs-string">'2019-07-22'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -683,6 +898,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -699,9 +916,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L15">context/sahi/accessor/accessor-api.interface.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L206">context/sahi/accessor/accessor-api.interface.ts:206</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a datetime field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;datetime&quot;]</code></p>
+								<p>If you want to set a value on this element please consider the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime">supported formats</a></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"datetime"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"date-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_datetimebox(<span class="hljs-string">'date-input'</span>), <span class="hljs-string">'2019-07-22T19:30'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -709,6 +941,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -725,9 +959,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L16">context/sahi/accessor/accessor-api.interface.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L230">context/sahi/accessor/accessor-api.interface.ts:230</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a datetime-local field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;datetime-local&quot;]</code></p>
+								<p>If you want to set a value on this element please consider the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local">supported formats</a></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"datetime-local"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"date-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_datetimelocalbox(<span class="hljs-string">'date-input'</span>), <span class="hljs-string">'2019-07-22T19:30'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -735,6 +984,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -751,9 +1002,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L87">context/sahi/accessor/accessor-api.interface.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1262">context/sahi/accessor/accessor-api.interface.ts:1262</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a details element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>details</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -761,6 +1018,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -777,9 +1036,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L45">context/sahi/accessor/accessor-api.interface.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L814">context/sahi/accessor/accessor-api.interface.ts:814</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a div element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>div</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -787,6 +1052,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -803,9 +1070,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L17">context/sahi/accessor/accessor-api.interface.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L252">context/sahi/accessor/accessor-api.interface.ts:252</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a email field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;email&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"mail-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_emailbox(<span class="hljs-string">'mail-input'</span>), <span class="hljs-string">'do-not-spam@sakuli.io'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -813,6 +1094,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -829,9 +1112,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L71">context/sahi/accessor/accessor-api.interface.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1102">context/sahi/accessor/accessor-api.interface.ts:1102</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a embed element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>embed</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -839,6 +1128,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -855,9 +1146,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L58">context/sahi/accessor/accessor-api.interface.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L937">context/sahi/accessor/accessor-api.interface.ts:937</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches an emphasis element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>em</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -865,6 +1162,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -881,9 +1180,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L47">context/sahi/accessor/accessor-api.interface.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L833">context/sahi/accessor/accessor-api.interface.ts:833</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a fieldset element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>fieldset</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -891,6 +1196,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -907,9 +1214,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L88">context/sahi/accessor/accessor-api.interface.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1272">context/sahi/accessor/accessor-api.interface.ts:1272</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a figcaption element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>figcaption</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -917,6 +1230,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -933,9 +1248,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L89">context/sahi/accessor/accessor-api.interface.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1282">context/sahi/accessor/accessor-api.interface.ts:1282</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a figure element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>figure</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -943,6 +1264,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -959,9 +1282,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L35">context/sahi/accessor/accessor-api.interface.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L676">context/sahi/accessor/accessor-api.interface.ts:676</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a file input by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;file&quot;]</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -969,6 +1298,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -985,9 +1316,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L75">context/sahi/accessor/accessor-api.interface.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1142">context/sahi/accessor/accessor-api.interface.ts:1142</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a font element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>font</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -995,6 +1332,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1011,9 +1350,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L90">context/sahi/accessor/accessor-api.interface.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1292">context/sahi/accessor/accessor-api.interface.ts:1292</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a footer element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>footer</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1021,6 +1366,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1037,9 +1384,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L69">context/sahi/accessor/accessor-api.interface.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1082">context/sahi/accessor/accessor-api.interface.ts:1082</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a frame element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>frame</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>Frames are even deprecated in HTML itself. Anyway some legacy pages are still using this technology. To access elements in a frame, the same method as described for <a href="accessorapi.html#_iframe">_iframe</a> can be used.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1047,6 +1405,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1063,9 +1423,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L91">context/sahi/accessor/accessor-api.interface.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1302">context/sahi/accessor/accessor-api.interface.ts:1302</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a header element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>header</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1073,6 +1439,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1089,9 +1457,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L48">context/sahi/accessor/accessor-api.interface.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L842">context/sahi/accessor/accessor-api.interface.ts:842</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a heading element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>h1</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1099,6 +1473,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1115,9 +1491,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L49">context/sahi/accessor/accessor-api.interface.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L851">context/sahi/accessor/accessor-api.interface.ts:851</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a heading element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>h2</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1125,6 +1507,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1141,9 +1525,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L50">context/sahi/accessor/accessor-api.interface.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L860">context/sahi/accessor/accessor-api.interface.ts:860</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a heading element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>h3</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1151,6 +1541,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1167,9 +1559,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L51">context/sahi/accessor/accessor-api.interface.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L869">context/sahi/accessor/accessor-api.interface.ts:869</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a heading element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>h4</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1177,6 +1575,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1193,9 +1593,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L52">context/sahi/accessor/accessor-api.interface.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L878">context/sahi/accessor/accessor-api.interface.ts:878</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a heading element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>h5</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1203,6 +1609,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1219,9 +1627,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L53">context/sahi/accessor/accessor-api.interface.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L887">context/sahi/accessor/accessor-api.interface.ts:887</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a heading element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>h6</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1229,6 +1643,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1245,9 +1661,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L13">context/sahi/accessor/accessor-api.interface.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L158">context/sahi/accessor/accessor-api.interface.ts:158</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a hidden field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;hidden&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"hidden-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_hidden(<span class="hljs-string">'hidden-input'</span>), <span class="hljs-string">'some data'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1255,6 +1685,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1271,9 +1703,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L66">context/sahi/accessor/accessor-api.interface.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1017">context/sahi/accessor/accessor-api.interface.ts:1017</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a horizontal-ruler element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>hr</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1281,6 +1719,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1297,9 +1737,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L67">context/sahi/accessor/accessor-api.interface.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1055">context/sahi/accessor/accessor-api.interface.ts:1055</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a iframe element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>iframe</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Accessing a Iframe:
+										<code></code></p>
+										<pre><code class="language-html"><span class="hljs-comment">&lt;!-- embeded.html --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Button in a frame<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- page.html --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"embeded.html"</span> /&gt;</span></code></pre>
+										<p>Sakuli can also access contents from an Iframe using the <a href="https://sakuli.io/docs/100_writing-tests/000_web-testing/#webdriver-instance">WebDriver-instance</a></p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _navigateTo(<span class="hljs-string">'page.html'</span>); <span class="hljs-comment">// 1.</span>
+<span class="hljs-keyword">const</span> iFrame = <span class="hljs-keyword">await</span> _fetch(_iframe(<span class="hljs-number">0</span>)); <span class="hljs-comment">// 2.</span>
+<span class="hljs-keyword">await</span> driver.switchTo().frame(iFrame); <span class="hljs-comment">// 3.</span>
+<span class="hljs-keyword">await</span> _click(_button(<span class="hljs-string">'Button in a frame'</span>)); <span class="hljs-comment">// 4.</span>
+<span class="hljs-keyword">await</span> driver.switchTo().defaultContent();</code></pre>
+										<ol>
+											<li>Assuming that Sakuli is navigated to page that contains an iframe</li>
+											<li>Fetch an instance of seleniums <a href="fetchapi.html#_fetch">WebElement](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html) using [<code>_fetch</code></a></li>
+											<li>Using seleniums <a href="https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_TargetLocator.html#frame"><code>switchTo().frame()</code></a> to change the context to the iframe</li>
+											<li>Now elements within the iframe page are accessible</li>
+											<li>Switching back to the &quot;main-frame&quot;</li>
+										</ol>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1307,6 +1777,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1323,9 +1795,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L41">context/sahi/accessor/accessor-api.interface.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L759">context/sahi/accessor/accessor-api.interface.ts:759</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches an image by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>img</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p> Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"funny-cat.gif"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">""</span> /&gt;</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1333,6 +1817,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1349,9 +1835,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L32">context/sahi/accessor/accessor-api.interface.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L615">context/sahi/accessor/accessor-api.interface.ts:615</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a image button by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;image&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>User: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Password: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"cool-button.png"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"login"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">from</span>&gt;</span></code></pre>
+										<p>Submitting the form with a <a href="mouseactionapi.html#_click"><code>_click</code></a></p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _click(_imageSubmitButton(<span class="hljs-string">'login'</span>));</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1359,6 +1863,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1375,9 +1881,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L57">context/sahi/accessor/accessor-api.interface.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L927">context/sahi/accessor/accessor-api.interface.ts:927</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a italic element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>i</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1385,6 +1897,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1401,9 +1915,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L42">context/sahi/accessor/accessor-api.interface.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L769">context/sahi/accessor/accessor-api.interface.ts:769</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a label element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>label</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1411,6 +1931,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1427,9 +1949,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L40">context/sahi/accessor/accessor-api.interface.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L743">context/sahi/accessor/accessor-api.interface.ts:743</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a anchor / link element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>a</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/home"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre>
+										<p>Following the &quot;<em>About</em>&quot; link with <a href="mouseactionapi.html#_click"><code>_click</code></a></p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _click(_link(<span class="hljs-string">'About'</span>))</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1437,6 +1976,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1453,9 +1994,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L44">context/sahi/accessor/accessor-api.interface.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L805">context/sahi/accessor/accessor-api.interface.ts:805</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches an unordered list element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>ul</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1463,6 +2010,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1479,9 +2028,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L43">context/sahi/accessor/accessor-api.interface.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L795">context/sahi/accessor/accessor-api.interface.ts:795</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a list-item element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>li</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Pizza<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Burger<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"de"</span>&gt;</span>Bratwurst<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> lang = <span class="hljs-keyword">await</span> _getAttribute(_listItem(<span class="hljs-string">'Bratwurst'</span>), <span class="hljs-string">'lang'</span>); <span class="hljs-comment">// -&gt; 'de'</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1489,6 +2055,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1505,9 +2073,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L92">context/sahi/accessor/accessor-api.interface.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1312">context/sahi/accessor/accessor-api.interface.ts:1312</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a main element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>main</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1515,6 +2089,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1531,9 +2107,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L55">context/sahi/accessor/accessor-api.interface.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L907">context/sahi/accessor/accessor-api.interface.ts:907</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a map element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>map</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1541,6 +2123,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1557,9 +2141,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L93">context/sahi/accessor/accessor-api.interface.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1322">context/sahi/accessor/accessor-api.interface.ts:1322</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a mark element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>mark</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1567,6 +2157,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1583,9 +2175,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L18">context/sahi/accessor/accessor-api.interface.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L276">context/sahi/accessor/accessor-api.interface.ts:276</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a month field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;month&quot;]</code></p>
+								<p>If you want to set a value on this element please consider the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month">supported formats</a></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"month"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"month-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_monthbox(<span class="hljs-string">'month-input'</span>), <span class="hljs-string">'2019-07'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1593,6 +2200,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1609,9 +2218,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L94">context/sahi/accessor/accessor-api.interface.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1332">context/sahi/accessor/accessor-api.interface.ts:1332</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a nav element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>nav</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1619,6 +2234,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1635,9 +2252,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L19">context/sahi/accessor/accessor-api.interface.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L299">context/sahi/accessor/accessor-api.interface.ts:299</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a number field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;number&quot;]</code></p>
+								<p>If you want to set a value on this element please consider the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date">supported formats</a></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"number-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_numberbox(<span class="hljs-string">'number-input'</span>), <span class="hljs-number">5</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1645,6 +2277,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1661,9 +2295,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L70">context/sahi/accessor/accessor-api.interface.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1092">context/sahi/accessor/accessor-api.interface.ts:1092</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a object element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>object</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1671,6 +2311,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1687,9 +2329,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L34">context/sahi/accessor/accessor-api.interface.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L666">context/sahi/accessor/accessor-api.interface.ts:666</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches an option element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>select</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"preferred-drink"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"water"</span> <span class="hljs-attr">selected</span>&gt;</span>Water<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"wine"</span>&gt;</span>Wine<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"beer"</span>&gt;</span>Beer<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span></code></pre>
+										<p>Detect if an option is visible with <a href="fetchapi.html#_isvisible"><code>_isVisible</code></a></p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _isVisible(_option(<span class="hljs-string">'Wine'</span>)); <span class="hljs-comment">// -&gt; false</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1697,6 +2357,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1713,9 +2375,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L56">context/sahi/accessor/accessor-api.interface.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L917">context/sahi/accessor/accessor-api.interface.ts:917</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a paragraph element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>p</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1723,6 +2391,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1739,9 +2409,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L11">context/sahi/accessor/accessor-api.interface.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L112">context/sahi/accessor/accessor-api.interface.ts:112</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a password field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;password&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_password(<span class="hljs-string">'password-input'</span>), <span class="hljs-string">"$ecret"</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1749,6 +2433,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1765,9 +2451,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L61">context/sahi/accessor/accessor-api.interface.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L967">context/sahi/accessor/accessor-api.interface.ts:967</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a preformat element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>pre</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1775,6 +2467,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1791,9 +2485,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L29">context/sahi/accessor/accessor-api.interface.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L532">context/sahi/accessor/accessor-api.interface.ts:532</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a radio field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;radio&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Prefered Drink?<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Water<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"drink"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"water"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Wine<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"drink"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"wine"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Beer<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"drink"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"beer"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></code></pre>
+										<p>Checking the field with <a href="mouseactionapi.html#_click"><code>_click</code></a>:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _click(_radio(<span class="hljs-number">1</span>)); <span class="hljs-comment">// Selects 'Wine'</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1801,6 +2521,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1817,9 +2539,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L20">context/sahi/accessor/accessor-api.interface.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L321">context/sahi/accessor/accessor-api.interface.ts:321</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a range field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;range&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"range"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"range-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_rangebox(<span class="hljs-string">'range-input'</span>), <span class="hljs-number">5</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1827,6 +2563,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1843,9 +2581,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L31">context/sahi/accessor/accessor-api.interface.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L588">context/sahi/accessor/accessor-api.interface.ts:588</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a reset button by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;reset&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Name: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Street: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"street"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Post code: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"postcode"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"reset"</span>&gt;</span>Clear<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Save<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">from</span>&gt;</span></code></pre>
+										<p>Clearing the form with a <a href="mouseactionapi.html#_click"><code>_click</code></a></p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _click(_reset(<span class="hljs-string">'Clear'</span>));</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1853,6 +2611,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1869,9 +2629,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L37">context/sahi/accessor/accessor-api.interface.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L696">context/sahi/accessor/accessor-api.interface.ts:696</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a table-row element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>tr</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1879,6 +2645,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1895,9 +2663,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L68">context/sahi/accessor/accessor-api.interface.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1069">context/sahi/accessor/accessor-api.interface.ts:1069</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a iframe element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>iframe</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>This accessor was <a href="https://sahipro.com/docs/sahi-apis/rte-apis.html#_rte">used in Sahi</a> to access rich-text-editors that were based on iframes. Nowadays the most rich-text / WYSIWYG editors are implemented using HTML and JavaScript within the page were they are displayed.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1905,6 +2684,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1921,9 +2702,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L21">context/sahi/accessor/accessor-api.interface.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L343">context/sahi/accessor/accessor-api.interface.ts:343</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a search field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;search&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"search-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_searchbox(<span class="hljs-string">'search-input'</span>), <span class="hljs-string">'sakuli'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1931,6 +2726,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1947,9 +2744,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L95">context/sahi/accessor/accessor-api.interface.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1342">context/sahi/accessor/accessor-api.interface.ts:1342</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a section element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>section</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1957,6 +2760,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1973,9 +2778,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L33">context/sahi/accessor/accessor-api.interface.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L640">context/sahi/accessor/accessor-api.interface.ts:640</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a select element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>select</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"preferred-drink"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"water"</span>&gt;</span>Water<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"wine"</span>&gt;</span>Wine<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"beer"</span>&gt;</span>Beer<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span></code></pre>
+										<p>Change the selected option with <a href="mouseactionapi.html#_setselected"><code>_setSelected</code></a></p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _setSelected(_select(<span class="hljs-string">'preferred-drink'</span>), <span class="hljs-string">'beer'</span>);</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1983,6 +2806,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -1999,9 +2824,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L46">context/sahi/accessor/accessor-api.interface.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L823">context/sahi/accessor/accessor-api.interface.ts:823</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a span element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>span</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2009,6 +2840,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2025,9 +2858,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L60">context/sahi/accessor/accessor-api.interface.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L957">context/sahi/accessor/accessor-api.interface.ts:957</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a strong element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>strong</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2035,6 +2874,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2051,9 +2892,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L30">context/sahi/accessor/accessor-api.interface.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L559">context/sahi/accessor/accessor-api.interface.ts:559</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a submit button by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;submit&quot;], button[type=&quot;submit&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>User: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Password: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Login<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">from</span>&gt;</span></code></pre>
+										<p>Submitting the form with a <a href="mouseactionapi.html#_click"><code>_click</code></a></p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _click(_submit(<span class="hljs-string">'Login'</span>));</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2061,6 +2920,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2077,9 +2938,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L96">context/sahi/accessor/accessor-api.interface.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1352">context/sahi/accessor/accessor-api.interface.ts:1352</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a summary element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>summary</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2087,6 +2954,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2103,9 +2972,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L78">context/sahi/accessor/accessor-api.interface.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1172">context/sahi/accessor/accessor-api.interface.ts:1172</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a circle element (from a svg-image) by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>circle</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2113,6 +2988,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2129,9 +3006,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L79">context/sahi/accessor/accessor-api.interface.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1182">context/sahi/accessor/accessor-api.interface.ts:1182</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a ellipse element (from a svg-image) by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>ellipse</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2139,6 +3022,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2155,9 +3040,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L80">context/sahi/accessor/accessor-api.interface.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1192">context/sahi/accessor/accessor-api.interface.ts:1192</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a line element (from a svg-image) by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>line</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2165,6 +3056,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2181,9 +3074,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L83">context/sahi/accessor/accessor-api.interface.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1222">context/sahi/accessor/accessor-api.interface.ts:1222</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a path element (from a svg-image) by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>path</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2191,6 +3090,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2207,9 +3108,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L81">context/sahi/accessor/accessor-api.interface.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1202">context/sahi/accessor/accessor-api.interface.ts:1202</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a polygon element (from a svg-image) by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>polygon</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2217,6 +3124,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2233,9 +3142,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L82">context/sahi/accessor/accessor-api.interface.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1212">context/sahi/accessor/accessor-api.interface.ts:1212</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a polyline element (from a svg-image) by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>polyline</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2243,6 +3158,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2259,9 +3176,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L76">context/sahi/accessor/accessor-api.interface.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1152">context/sahi/accessor/accessor-api.interface.ts:1152</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a rect element (from a svg-image) by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>rect</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2269,6 +3192,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2285,9 +3210,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L84">context/sahi/accessor/accessor-api.interface.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1232">context/sahi/accessor/accessor-api.interface.ts:1232</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a text element (from a svg-image) by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>text</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2295,6 +3226,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2311,9 +3244,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L77">context/sahi/accessor/accessor-api.interface.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1162">context/sahi/accessor/accessor-api.interface.ts:1162</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a text-span element (from a svg-image) by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>tspan</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2321,6 +3260,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2337,9 +3278,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L36">context/sahi/accessor/accessor-api.interface.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L686">context/sahi/accessor/accessor-api.interface.ts:686</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a table element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>table</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2347,6 +3294,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2363,9 +3312,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L39">context/sahi/accessor/accessor-api.interface.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L716">context/sahi/accessor/accessor-api.interface.ts:716</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a table-header element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>th</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2373,6 +3328,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2389,9 +3346,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L22">context/sahi/accessor/accessor-api.interface.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L364">context/sahi/accessor/accessor-api.interface.ts:364</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a tel field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;number&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"tel"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"tel-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_telephonebox(<span class="hljs-string">'tel-input'</span>), <span class="hljs-string">'123456'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2399,6 +3370,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2415,9 +3388,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L26">context/sahi/accessor/accessor-api.interface.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L452">context/sahi/accessor/accessor-api.interface.ts:452</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a textarea by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>textarea</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"textarea-input"</span> &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_textarea(<span class="hljs-string">'textarea-input'</span>), <span class="hljs-string">'Some longer text maybe...'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2425,6 +3412,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2441,9 +3430,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L12">context/sahi/accessor/accessor-api.interface.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L136">context/sahi/accessor/accessor-api.interface.ts:136</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a text input field (or a without any type attribute because this is considered as text input by the browsers) by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;text&quot;], input:not([type])</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"first-name"</span> /&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"last-name"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this fields:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_textbox(<span class="hljs-string">'first-name'</span>) ,<span class="hljs-string">"Bill"</span>)
+   <span class="hljs-keyword">await</span> _setValue(_textbox(<span class="hljs-string">'last-name'</span>) ,<span class="hljs-string">"Jobs"</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2451,6 +3456,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2467,9 +3474,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L97">context/sahi/accessor/accessor-api.interface.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1362">context/sahi/accessor/accessor-api.interface.ts:1362</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a time element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>time</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2477,6 +3490,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2493,9 +3508,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L23">context/sahi/accessor/accessor-api.interface.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L387">context/sahi/accessor/accessor-api.interface.ts:387</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a number field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;time&quot;]</code></p>
+								<ul>
+									<li>If you want to set a value on this element please consider the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date">supported formats</a></li>
+								</ul>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"time"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"time-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_timebox(<span class="hljs-string">'time-input'</span>), <span class="hljs-string">'19:09'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2503,6 +3535,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2519,9 +3553,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L24">context/sahi/accessor/accessor-api.interface.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L408">context/sahi/accessor/accessor-api.interface.ts:408</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a url field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;url&quot;]</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"url"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"url-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_urlbox(<span class="hljs-string">'url-input'</span>), <span class="hljs-string">'https://sakuli.io'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2529,6 +3577,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2545,9 +3595,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L98">context/sahi/accessor/accessor-api.interface.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L1372">context/sahi/accessor/accessor-api.interface.ts:1372</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a video element by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>video</code></p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2555,6 +3611,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
@@ -2571,9 +3629,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/26af755/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L25">context/sahi/accessor/accessor-api.interface.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/accessor/accessor-api.interface.ts#L431">context/sahi/accessor/accessor-api.interface.ts:431</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches a week field by an <a href="../globals.html#accessoridentifier">identifier</a> - restricted by the <a href="relationapi.html">relations</a></p>
+								</div>
+								<p>Based on CSS selector: <code>input[type=&quot;week&quot;]</code></p>
+								<p>If you want to set a value on this element please consider the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week">supported formats</a></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"week"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"week-input"</span> /&gt;</span></code></pre>
+										<p>Setting the value of this field:</p>
+										<pre><code class="language-typescript">   <span class="hljs-keyword">await</span> _setValue(_weekbox(<span class="hljs-string">'week-input'</span>), <span class="hljs-string">'2019-W19'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2581,6 +3654,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>relations: <a href="../globals.html#sahirelation" class="tsd-signature-type">SahiRelation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h4>
