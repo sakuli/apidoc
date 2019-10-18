@@ -106,7 +106,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L35">context/sahi/action/common-action/common-actions.interface.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L35">context/sahi/action/common-action/common-actions.interface.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -166,13 +166,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L43">context/sahi/action/common-action/common-actions.interface.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L46">context/sahi/action/common-action/common-actions.interface.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Draws a red border around an element on the website.</p>
 								</div>
+								<p>This is useful for debugging and demonstrating reasons.
+								Note that the timeout of this highlight will increase the actual execution time of the current step.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -203,7 +205,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L81">context/sahi/action/common-action/common-actions.interface.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L89">context/sahi/action/common-action/common-actions.interface.ts:89</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -257,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L91">context/sahi/action/common-action/common-actions.interface.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L97">context/sahi/action/common-action/common-actions.interface.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -291,7 +293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L59">context/sahi/action/common-action/common-actions.interface.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L67">context/sahi/action/common-action/common-actions.interface.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -300,7 +302,12 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-comment">// Will wait at most 5 seconds until a submit button with the text "Buy now" is visible</span>
+									<dd><pre><code class="language-typescript">
+<span class="hljs-comment">// just waiting 10 seconds until proceeding</span>
+<span class="hljs-keyword">await</span> _wait(<span class="hljs-number">10000</span>);
+
+
+<span class="hljs-comment">// Will wait at most 5 seconds until a submit button with the text "Buy now" is visible</span>
 <span class="hljs-keyword">await</span> _wait(<span class="hljs-number">5000</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> _isVisible(_submit(<span class="hljs-string">'Buy Now'</span>)));</code></pre>
 									</dd>
 								</dl>
@@ -377,6 +384,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

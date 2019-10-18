@@ -62,14 +62,27 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="sakuli-rollup-hooks"><code>sakuli-rollup-hooks</code></h1>
-				<blockquote>
-					<p>TODO: description</p>
-				</blockquote>
-				<h2 id="usage">Usage</h2>
-				<pre><code><span class="hljs-keyword">const</span> sakuliRollupHooks = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sakuli-rollup-hooks'</span>);
-
-<span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> DEMONSTRATE API</span></code></pre>
+				<a href="#sakulirollup-hooks" id="sakulirollup-hooks" style="color: inherit; text-decoration: none;">
+					<h1>@sakuli/rollup-hooks</h1>
+				</a>
+				<p><strong>TLDR;</strong></p>
+				<p>This is a essential Part of Sakuli which handles the preprocessing of Testfiles. It is usually <em>not</em> nesseccary for Sakuli-Endusers to have any knowledge about the internals of this package.</p>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<p>This package provdies a preset that implements the following lifecycle hooks:</p>
+				<ul>
+					<li>readFileContent</li>
+					<li>requestContext</li>
+				</ul>
+				<p>It is required by <code>@sakuli/legacy</code> but can also be used (and considered) as the default file transformer for any Sakuli extension.</p>
+				<p>The basic task is to take a given test-file and bundle it together with it&#39;s dependencies into a single <em>script-string</em>. Sakuli will than create a <a href="https://nodejs.org/docs/latest-v10.x/api/vm.html#vm_new_vm_script_code_options">Script-Object</a> from this source.</p>
+				<p>As the name of this package tells, <a href="https://rollupjs.org/guide/en/">Rollup</a> does the heavy lifting of the bundling process. There is not much magic in this process. Some points are still interesting:</p>
+				<ul>
+					<li>It enables Sakuli to use ES6-Modules</li>
+					<li>The output format is <a href="https://rollupjs.org/guide/en/#core-functionality"><code>commonjs</code></a>, in order to work properly with external required modules sakuli also injects the <code>require</code> function from its scope.</li>
+					<li>If the extension of the provided file is <code>.ts</code> or <code>.tsx</code> the plugin <code>rollup-plugin-typescript2</code> is added as a plugin</li>
+				</ul>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -85,8 +98,26 @@
 					<li class=" tsd-kind-class">
 						<a href="classes/rolluplifecyclehooks.html" class="tsd-kind-icon">Rollup<wbr>Lifecycle<wbr>Hooks</a>
 					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#packagetypingmapping" class="tsd-kind-icon">package<wbr>Typing<wbr>Mapping</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#enabletypescriptcommand" class="tsd-kind-icon">enable<wbr>Typescript<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getinstalledpresets" class="tsd-kind-icon">get<wbr>Installed<wbr>Presets</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#readjson" class="tsd-kind-icon">read<wbr>Json</a>
+					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#sakulirolluppreset" class="tsd-kind-icon">sakuli<wbr>Rollup<wbr>Preset</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-not-exported">
+						<a href="globals.html#userinput" class="tsd-kind-icon">user<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#defaulttsconfig" class="tsd-kind-icon">default<wbr>TsConfig</a>
 					</li>
 				</ul>
 			</nav>
@@ -105,6 +136,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

@@ -64,6 +64,21 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Collection of different user-input related actions that can be invoked within a web page during the test.</p>
+					</div>
+					<p>The action API consists of:</p>
+					<ul>
+						<li><a href="mouseactionapi.html">MouseActionApi</a></li>
+						<li><a href="keyboardactionsapi.html">KeyboardActionsApi</a></li>
+						<li><a href="focusactionapi.html">FocusActionApi</a></li>
+						<li><a href="commonactionsapi.html">CommonActionsApi</a></li>
+					</ul>
+					<p>All methods of this interface are available as global functions in Sakuli tests.</p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -140,12 +155,13 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="focusactionapi.html">FocusActionApi</a>.<a href="focusactionapi.html#_blur">_blur</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L25">context/sahi/action/focus-action/focus-actions.interface.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L29">context/sahi/action/focus-action/focus-actions.interface.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Fetches an element and perform the native <code>.blur()</code> in the browser.</p>
+									<p>Fetches an element and performs the native <code>.blur()</code> in the browser.
+									That means that this element will lose the focus-state.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -170,13 +186,20 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_check">_check</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L59">context/sahi/action/mouse-action/mouse-action-api.interface.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L80">context/sahi/action/mouse-action/mouse-action-api.interface.ts:80</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a click on a checkbox input and forces its state to be checked</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -194,7 +217,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_click">_click</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L27">context/sahi/action/mouse-action/mouse-action-api.interface.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L28">context/sahi/action/mouse-action/mouse-action-api.interface.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -203,12 +226,10 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><code>
-_click(_button("Click Me"));
-_click(_button("Click Me"), "CTRL"); // clicks with CTRL key pressed
-_click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pressed
-
-</code>
+									<dd><br />
+										<pre><code class="language-typescript">_click(_button(<span class="hljs-string">"Click Me"</span>));
+_click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-string">"CTRL"</span>); <span class="hljs-comment">// clicks with CTRL key pressed</span>
+_click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-string">"CTRL|SHIFT"</span>); <span class="hljs-comment">// clicks with CTRL and SHIFT keys pressed</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -223,8 +244,8 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> combo: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Any combo key: can be &quot;CTRL&quot;, &quot;SHIFT&quot;, &quot;ALT&quot; or &quot;META&quot;;
-										Can also be two or more keys together like &quot;CTRL|SHIFT&quot;</p>
+										<p>Optional combo key(s): can be <kbd>CTRL</kbd>, <kbd>SHIFT</kbd>, <kbd>ALT</kbd> or <kbd>META</kbd>;
+										Can also be two or more keys together like <code>&quot;CTRL|SHIFT&quot;</code></p>
 									</div>
 								</li>
 							</ul>
@@ -244,9 +265,16 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_dragdrop">_dragDrop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L63">context/sahi/action/mouse-action/mouse-action-api.interface.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L99">context/sahi/action/mouse-action/mouse-action-api.interface.ts:99</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a mouse down on <em>eSource</em>, than moves the mouse to the position of element <em>eTarget</em> and releases the mouse button at this position.</p>
+								</div>
+								<p>This implementation uses Webdriver actions which does not always behave as expected.</p>
+								<p>For a more reliable experience <a href="thenableregion.html#draganddropto">ThenableRegion.dragAndDropTo</a> is recommended.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -254,6 +282,8 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								</li>
 								<li>
 									<h5>eTarget: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -271,9 +301,16 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_dragdropxy">_dragDropXY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L65">context/sahi/action/mouse-action/mouse-action-api.interface.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L113">context/sahi/action/mouse-action/mouse-action-api.interface.ts:113</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a mouse down on <em>eSource</em>, than moves the mouse to the position P(x,y) in the browsers&#39; viewport and releases the mouse button at this position.</p>
+								</div>
+								<p>This implementation uses Webdriver actions which does not always behave as expected.</p>
+								<p>For a more reliable experience <a href="thenableregion.html#draganddropto">ThenableRegion.dragAndDropTo</a> is recommended.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -287,6 +324,8 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> $isRelative: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -304,7 +343,7 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="commonactionsapi.html">CommonActionsApi</a>.<a href="commonactionsapi.html#_eval">_eval</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L35">context/sahi/action/common-action/common-actions.interface.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L35">context/sahi/action/common-action/common-actions.interface.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -365,13 +404,16 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="focusactionapi.html">FocusActionApi</a>.<a href="focusactionapi.html#_focus">_focus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L15">context/sahi/action/focus-action/focus-actions.interface.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L18">context/sahi/action/focus-action/focus-actions.interface.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Fetches an element and performs the native <code>.focus()</code> method n the browser</p>
+									<p>Fetches an element and performs the native <code>.focus()</code> method in the browser.
+									When <code>_focus</code> is performed on an <code>&lt;input&gt;</code> element, it will be automatically scrolled into the viewport by the browser.</p>
 								</div>
+								<p>Note that not all elements will get an actual focus in the browser.
+								Usually links and user-controls (e.g. <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>...) can gain focus.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -398,13 +440,15 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="commonactionsapi.html">CommonActionsApi</a>.<a href="commonactionsapi.html#_highlight">_highlight</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L43">context/sahi/action/common-action/common-actions.interface.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L46">context/sahi/action/common-action/common-actions.interface.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Draws a red border around an element on the website.</p>
 								</div>
+								<p>This is useful for debugging and demonstrating reasons.
+								Note that the timeout of this highlight will increase the actual execution time of the current step.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -436,9 +480,16 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="keyboardactionsapi.html">KeyboardActionsApi</a>.<a href="keyboardactionsapi.html#_keydown">_keyDown</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L6">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L51">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:51</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invokes a single <code>keydown</code> event on the given element.
+										This is useful if you want to invoke a certain event which relies
+									on the keydown event. In most cases it has to be used together with <a href="keyboardactionsapi.html#_keyup">KeyboardActionsApi._keyUp</a></p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -449,6 +500,10 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> combo: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Optional combo key(s): can be <kbd>CTRL</kbd>, <kbd>SHIFT</kbd>, <kbd>ALT</kbd> or <kbd>META</kbd>;
+										Can also be two or more keys together like <code>&quot;CTRL|SHIFT&quot;</code></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -466,9 +521,20 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="keyboardactionsapi.html">KeyboardActionsApi</a>.<a href="keyboardactionsapi.html#_keypress">_keyPress</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L8">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L76">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:76</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a single keystroke (<code>&#39;keypress&#39;</code>-event) on the element.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Performing <kbd>CTRL</kbd>+<kbd>s</kbd> on an (imaginary) web-based word-processor element:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _keyPress(_byId(<span class="hljs-string">'word-processor-canvas'</span>), <span class="hljs-string">'s'</span>, <span class="hljs-string">'CTRL'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -479,6 +545,10 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> combo: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Optional combo key(s): can be <kbd>CTRL</kbd>, <kbd>SHIFT</kbd>, <kbd>ALT</kbd> or <kbd>META</kbd>;
+										Can also be two or more keys together like <code>&quot;CTRL|SHIFT&quot;</code></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -496,9 +566,15 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="keyboardactionsapi.html">KeyboardActionsApi</a>.<a href="keyboardactionsapi.html#_keyup">_keyUp</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L7">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L60">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:60</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invokes a single <code>keyup</code> event with the given element.
+									This is only useful when <a href="keyboardactionsapi.html#_keydown">KeyboardActionsApi._keyDown</a> is invoked previously. Some WebDrivers like Firefox will not trigger any event if there was no keypress before.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -506,6 +582,8 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								</li>
 								<li>
 									<h5>charInfo: <a href="../globals.html#charinfo" class="tsd-signature-type">CharInfo</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -523,7 +601,7 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_mousedown">_mouseDown</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L40">context/sahi/action/mouse-action/mouse-action-api.interface.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L41">context/sahi/action/mouse-action/mouse-action-api.interface.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -570,9 +648,14 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_mouseover">_mouseOver</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L57">context/sahi/action/mouse-action/mouse-action-api.interface.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L73">context/sahi/action/mouse-action/mouse-action-api.interface.ts:73</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invokes a mouse over on the queried element. Can be combined with a key combo.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -580,6 +663,10 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> combo: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Optional combo key(s): can be <kbd>CTRL</kbd>, <kbd>SHIFT</kbd>, <kbd>ALT</kbd> or <kbd>META</kbd>;
+										Can also be two or more keys together like <code>&quot;CTRL|SHIFT&quot;</code></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -597,12 +684,13 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_mouseup">_mouseUp</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L53">context/sahi/action/mouse-action/mouse-action-api.interface.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L55">context/sahi/action/mouse-action/mouse-action-api.interface.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Performs a <code>release</code> action on the element</p>
+									<p>Performs a <code>release</code> action on the element.
+									Release is the action when a user releases his finger from the mouse button.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>see</dt>
@@ -624,8 +712,8 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> combo: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Any combo key: can be &quot;CTRL&quot;, &quot;SHIFT&quot;, &quot;ALT&quot; or &quot;META&quot;;
-										Can also be two or more keys together like &quot;CTRL|SHIFT&quot;</p>
+										<p>Optional combo key(s): can be <kbd>CTRL</kbd>, <kbd>SHIFT</kbd>, <kbd>ALT</kbd> or <kbd>META</kbd>;
+										Can also be two or more keys together like <code>&quot;CTRL|SHIFT&quot;</code></p>
 									</div>
 								</li>
 							</ul>
@@ -644,7 +732,7 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="commonactionsapi.html">CommonActionsApi</a>.<a href="commonactionsapi.html#_navigateto">_navigateTo</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L81">context/sahi/action/common-action/common-actions.interface.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L89">context/sahi/action/common-action/common-actions.interface.ts:89</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -699,7 +787,7 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="focusactionapi.html">FocusActionApi</a>.<a href="focusactionapi.html#_removefocus">_removeFocus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L26">context/sahi/action/focus-action/focus-actions.interface.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L30">context/sahi/action/focus-action/focus-actions.interface.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -723,9 +811,14 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_rightclick">_rightClick</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L55">context/sahi/action/mouse-action/mouse-action-api.interface.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L64">context/sahi/action/mouse-action/mouse-action-api.interface.ts:64</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a right click on the queried element. Can be combined with a key combo.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -733,6 +826,10 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> combo: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Any combo key: can be &quot;CTRL&quot;, &quot;SHIFT&quot;, &quot;ALT&quot; or &quot;META&quot;;
+										Can also be two or more keys together like &quot;CTRL|SHIFT&quot;</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -750,7 +847,7 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="commonactionsapi.html">CommonActionsApi</a>.<a href="commonactionsapi.html#_rtewrite">_rteWrite</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L91">context/sahi/action/common-action/common-actions.interface.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L97">context/sahi/action/common-action/common-actions.interface.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -785,9 +882,28 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_setselected">_setSelected</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L67">context/sahi/action/mouse-action/mouse-action-api.interface.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L140">context/sahi/action/mouse-action/mouse-action-api.interface.ts:140</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the options within a <code>&lt;select&gt;</code> element.
+									Selection can be done by the actual values of an option or its zero-based element index.</p>
+								</div>
+								<p>This action will invoke a click on the option element which means that the <em>selected</em> state is not enforced. If an option is already selected, it will be unselected.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume this HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">multiple</span>=<span class="hljs-string">"multiple"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"cities"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"muc"</span>&gt;</span>Munich<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"vie"</span>&gt;</span>Vienna<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"dus"</span>&gt;</span>Dusseldorf<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span></code></pre>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _setSelected(_select(<span class="hljs-string">'cities'</span>), <span class="hljs-string">'vie'</span>) <span class="hljs-comment">// -&gt; select the option Vienna</span>
+<span class="hljs-keyword">await</span> _setSelected(_select(<span class="hljs-string">'cities'</span>), <span class="hljs-number">0</span>) <span class="hljs-comment">// -&gt; select the option Dusseldorf</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -798,6 +914,8 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> isMultiple: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -815,9 +933,37 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="keyboardactionsapi.html">KeyboardActionsApi</a>.<a href="keyboardactionsapi.html#_setvalue">_setValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L5">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L39">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:39</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a value on an <code>&lt;input /&gt;</code> field.</p>
+								</div>
+								<p>It will clear the existing value from the input before:</p>
+								<ul>
+									<li><p>It will send each character from the <em>value</em> string to the input with an delay of 10 ms
+											using <a href="https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#sendKeys" class="external">.sendKeys</a>.
+											This ensures that components which rely on key-events (like <code>keyup</code> or <code>keydown</code>) will behave
+										as expected on the page.</p>
+									</li>
+									<li><p>When <a href="https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#sendKeys" class="external">.sendKeys</a> fails,
+										<code>_setValue</code> will try to set the value attribute of the dom element.</p>
+									</li>
+								</ul>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>
+										<p><code>_setValue</code> can be used to enter login information:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _setValue(_textbox(<span class="hljs-string">'username'</span>), <span class="hljs-string">'IamGroot'</span>);
+<span class="hljs-keyword">await</span> _setValue(_password(<span class="hljs-string">'password'</span>), <span class="hljs-string">'$secret'</span>);</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -825,6 +971,8 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -842,9 +990,15 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="keyboardactionsapi.html">KeyboardActionsApi</a>.<a href="keyboardactionsapi.html#_type">_type</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L9">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L85">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:85</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invokes <a href="https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#sendKeys" class="external">.sendKeys</a> on the given element.
+									It will neither type with a delay nor set the <code>value</code>-attribute when the method fails.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -852,6 +1006,8 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								</li>
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -869,13 +1025,20 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_uncheck">_uncheck</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L61">context/sahi/action/mouse-action/mouse-action-api.interface.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L87">context/sahi/action/mouse-action/mouse-action-api.interface.ts:87</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a click on a checkbox input and forces its state not to be checked</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -893,7 +1056,7 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="commonactionsapi.html">CommonActionsApi</a>.<a href="commonactionsapi.html#_wait">_wait</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L59">context/sahi/action/common-action/common-actions.interface.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L67">context/sahi/action/common-action/common-actions.interface.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -902,7 +1065,12 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-comment">// Will wait at most 5 seconds until a submit button with the text "Buy now" is visible</span>
+									<dd><pre><code class="language-typescript">
+<span class="hljs-comment">// just waiting 10 seconds until proceeding</span>
+<span class="hljs-keyword">await</span> _wait(<span class="hljs-number">10000</span>);
+
+
+<span class="hljs-comment">// Will wait at most 5 seconds until a submit button with the text "Buy now" is visible</span>
 <span class="hljs-keyword">await</span> _wait(<span class="hljs-number">5000</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> _isVisible(_submit(<span class="hljs-string">'Buy Now'</span>)));</code></pre>
 									</dd>
 								</dl>
@@ -930,14 +1098,14 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 					<a name="_xy" class="tsd-anchor"></a>
 					<h3>_xy</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">_xy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">never</span></li>
+						<li class="tsd-signature tsd-kind-icon">_xy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_xy">_xy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L8">context/sahi/action/mouse-action/mouse-action-api.interface.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L8">context/sahi/action/mouse-action/mouse-action-api.interface.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -949,7 +1117,7 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 									</dd>
 								</dl>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">never</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1063,6 +1231,7 @@ _click(_button("Click Me"), "CTRL|SHIFT"); // clicks with CTRL and SHIFT keys pr
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

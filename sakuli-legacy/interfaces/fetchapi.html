@@ -127,9 +127,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L13">context/sahi/fetch/fetch-api.interface.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L155">context/sahi/fetch/fetch-api.interface.ts:155</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if two queries resolves to the same element.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume this HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>entry<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>entry<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+										<p>Test the equality of two elements:</p>
+										<pre><code class="language-typescript"><span class="hljs-comment">// _listItem("entry") will fetch the first list item</span>
+<span class="hljs-keyword">const</span> equal = <span class="hljs-keyword">await</span> _areEqual(_listItem(<span class="hljs-number">0</span>), _listItem(<span class="hljs-string">"entry"</span>)) <span class="hljs-comment">// -&gt; true</span>
+<span class="hljs-keyword">const</span> notEqual = <span class="hljs-keyword">await</span> _areEqual(_listItem(<span class="hljs-number">1</span>), _listItem(<span class="hljs-string">"entry"</span>)) <span class="hljs-comment">// -&gt; false</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -137,6 +155,8 @@
 								</li>
 								<li>
 									<h5>query2: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -154,7 +174,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="multipleelementapi.html">MultipleElementApi</a>.<a href="multipleelementapi.html#_collect">_collect</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/multiple-element-api.interface.ts#L7">context/sahi/fetch/multiple-element-api.interface.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/multiple-element-api.interface.ts#L7">context/sahi/fetch/multiple-element-api.interface.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -183,9 +203,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L19">context/sahi/fetch/fetch-api.interface.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L305">context/sahi/fetch/fetch-api.interface.ts:305</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if a <em>parent</em> element contains a <em>child</em> element.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"parent"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"child-a"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"child-b"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+										<p>Check if an element is the contained within another</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _contains(_div(<span class="hljs-string">'parent'</span>), _div(<span class="hljs-string">'child-b'</span>)) <span class="hljs-comment">// -&gt; true</span>
+<span class="hljs-keyword">await</span> _contains(_div(<span class="hljs-string">'child-a'</span>), _div(<span class="hljs-string">'child-b'</span>)) <span class="hljs-comment">// -&gt; false</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -193,6 +230,8 @@
 								</li>
 								<li>
 									<h5>child: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -209,9 +248,28 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L18">context/sahi/fetch/fetch-api.interface.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L282">context/sahi/fetch/fetch-api.interface.ts:282</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compares the <a href="https://developer.mozilla.org/de/docs/Web/API/Element/innerHTML" class="external"><code>.innerHTML</code></a> of an element with the given html string.
+									Both <code>.innerHTML</code> and the snippet are unified using the <a href="https://github.com/declandewet/common-tags#html" class="external"><code>html</code></a> function from <a href="https://www.npmjs.com/package/common-tags">common-tags</a> library.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"d1"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: yellow"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>Formatted<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Text<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+										<p>Check if an element contains certain HTML:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _containsHTML(_div(<span class="hljs-number">0</span>), <span class="hljs-string">'&lt;i&gt;Formatted&lt;/i&gt;'</span>); <span class="hljs-comment">// -&gt; true</span>
+<span class="hljs-keyword">await</span> _containsHTML(_div(<span class="hljs-number">0</span>), <span class="hljs-string">'Text'</span>); <span class="hljs-comment">// -&gt; true</span>
+<span class="hljs-keyword">await</span> _containsHTML(_div(<span class="hljs-number">0</span>), <span class="hljs-string">'&lt;i&gt;Formatted&lt;/i&gt; Text'</span>); <span class="hljs-comment">// -&gt; true</span>
+<span class="hljs-keyword">await</span> _containsHTML(_div(<span class="hljs-number">0</span>), <span class="hljs-string">'&lt;i&gt;.*&lt;/i&gt;'</span>); <span class="hljs-comment">// -&gt; true</span>
+<span class="hljs-keyword">await</span> _containsHTML(_div(<span class="hljs-number">0</span>), <span class="hljs-string">'Formatted Text'</span>); <span class="hljs-comment">// -&gt; false</span>
+<span class="hljs-keyword">await</span> _containsHTML(_div(<span class="hljs-number">0</span>), <span class="hljs-string">'Non existent'</span>); <span class="hljs-comment">// -&gt; false</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -219,6 +277,8 @@
 								</li>
 								<li>
 									<h5>html: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -235,9 +295,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L17">context/sahi/fetch/fetch-api.interface.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L257">context/sahi/fetch/fetch-api.interface.ts:257</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if the displayed text of the element contains the given text.
+									The text parameter is turned into an RegExp object before performing the check.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> =<span class="hljs-string">"intro"</span>&gt;</span>
+Lorem ipsum dolor sit amet. consetetur sadipscing elitr
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Inner HTML-tags are stripped --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Hello <span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>World<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"pending-request"</span>&gt;</span>
+    There are 5 pending request
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+										<p>Check if a element contains certain text:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> containsIpsumDolor = <span class="hljs-keyword">await</span> _containsText(_paragraph(<span class="hljs-string">'intro'</span>), <span class="hljs-string">'ipsum dolor'</span>) <span class="hljs-comment">// -&gt; true</span>
+<span class="hljs-keyword">const</span> containsYpsumDolor = <span class="hljs-keyword">await</span> _containsText(_paragraph(<span class="hljs-string">'intro'</span>), <span class="hljs-string">'ypsum dolor'</span>) <span class="hljs-comment">// -&gt; false</span>
+
+<span class="hljs-keyword">const</span> containsText = <span class="hljs-keyword">await</span> _containsText(_div(<span class="hljs-number">0</span>), <span class="hljs-string">'Hello World'</span>); <span class="hljs-comment">// -&gt; true</span>
+
+<span class="hljs-keyword">const</span> probablyDynamicText = <span class="hljs-keyword">await</span> _containsText(_div(<span class="hljs-string">'pending-request'</span>), <span class="hljs-string">"There are . pending requests"</span>); <span class="hljs-comment">// -&gt; true</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -245,6 +331,8 @@
 								</li>
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -262,7 +350,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="multipleelementapi.html">MultipleElementApi</a>.<a href="multipleelementapi.html#_count">_count</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/multiple-element-api.interface.ts#L13">context/sahi/fetch/multiple-element-api.interface.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/multiple-element-api.interface.ts#L13">context/sahi/fetch/multiple-element-api.interface.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -291,13 +379,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L12">context/sahi/fetch/fetch-api.interface.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L130">context/sahi/fetch/fetch-api.interface.ts:130</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resolves to <code>true</code> / <code>false</code> when the element can be found in the DOM or not.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume this HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Hello<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+										<p>Determine if an element is present in the current DOM:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> present = <span class="hljs-keyword">await</span> _exists(_div(<span class="hljs-string">"Hello"</span>)); <span class="hljs-comment">// -&gt; true</span>
+<span class="hljs-keyword">const</span> absent = <span class="hljs-keyword">await</span> _exists(_div(<span class="hljs-string">"World"</span>)); <span class="hljs-comment">// -&gt; false</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -314,13 +418,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L24">context/sahi/fetch/fetch-api.interface.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L374">context/sahi/fetch/fetch-api.interface.ts:374</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Executes the given query and returns a &quot;native&quot; <a href="https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html" class="external"><code>WebElement</code></a> instance
+									when the query is successful.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WebElement</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -337,9 +449,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L11">context/sahi/fetch/fetch-api.interface.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L110">context/sahi/fetch/fetch-api.interface.ts:110</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves the value of an element attribute.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume this HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+    <span class="hljs-attr">data-testid</span>=<span class="hljs-string">"foo-element"</span>
+    <span class="hljs-attr">class</span>=<span class="hljs-string">"widget primary"</span>
+&gt;</span>Foo bar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+										<p>Accessing the values of div attributes:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> dataTestId = <span class="hljs-keyword">await</span> _getAttribute(_div(<span class="hljs-regexp">/Foo bar/</span>), <span class="hljs-string">'data-testid'</span>); <span class="hljs-comment">// -&gt; "foo-element"</span>
+<span class="hljs-keyword">const</span> classNames = <span class="hljs-keyword">await</span> _getAttribute(_div(<span class="hljs-regexp">/Foo bar/</span>), <span class="hljs-string">'class'</span>); <span class="hljs-comment">// -&gt; "widget primary"</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -363,13 +492,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L8">context/sahi/fetch/fetch-api.interface.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L41">context/sahi/fetch/fetch-api.interface.ts:41</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Alias for <a href="fetchapi.html#_gettext">FetchApi._getText</a>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -386,9 +522,28 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L9">context/sahi/fetch/fetch-api.interface.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L67">context/sahi/fetch/fetch-api.interface.ts:67</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds all <code>option</code> elements within the queried element and resolves to an array with all visible texts of the options.
+									If the parameter <code>value</code> is set to <code>&quot;value&quot;</code> it will resolve to an array with all option values.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume this HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"answers"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"a-yes"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"a-no"</span>&gt;</span>No<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"a-maybe"</span>&gt;</span>Maybe<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span></code></pre>
+										<p>Accessing either to displayed text or the actual values of the options:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> optionTexts = <span class="hljs-keyword">await</span> _getOptions(_select(<span class="hljs-string">'answers'</span>)); <span class="hljs-comment">// -&gt; ['Yes', 'No', 'Maybe']</span>
+<span class="hljs-keyword">const</span> optionValues = <span class="hljs-keyword">await</span> _getOptions(_select(<span class="hljs-string">'answers'</span>), <span class="hljs-string">"value"</span>); <span class="hljs-comment">// -&gt; ['a-yes', 'a-no', 'a-maybe']</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -396,6 +551,8 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"value"</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -412,13 +569,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L10">context/sahi/fetch/fetch-api.interface.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L90">context/sahi/fetch/fetch-api.interface.ts:90</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves the text content of the selected <code>option</code> within the <code>select</code> element.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume this HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"answers"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"a-yes"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"a-no"</span>&gt;</span>No<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">selected</span>=<span class="hljs-string">"selected"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"a-maybe"</span>&gt;</span>Maybe<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Selected attribute is also set if the user (or Sakuli) selects the option in the browser --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span></code></pre>
+										<p>Accessing either the displayed text or the actual value of the options:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> selectedOptionText = <span class="hljs-keyword">await</span> _getSelected(_select(<span class="hljs-string">'answers'</span>)); <span class="hljs-comment">// -&gt; 'a-maybe'</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -435,9 +612,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L23">context/sahi/fetch/fetch-api.interface.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L366">context/sahi/fetch/fetch-api.interface.ts:366</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves the selection from a user in the current document as a <code>string</code>.
+										This is most likely the text what will set to the clipboard if a user
+									copies the selection.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -452,13 +636,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L7">context/sahi/fetch/fetch-api.interface.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L34">context/sahi/fetch/fetch-api.interface.ts:34</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the visible (i.e. not hidden by CSS) innerText of this element, including sub-elements, without any leading or trailing whitespace. It uses <a href="https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#getText" class="external"><code>WebElement.getText()</code></a> method internally.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -475,13 +666,30 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L6">context/sahi/fetch/fetch-api.interface.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L27">context/sahi/fetch/fetch-api.interface.ts:27</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves the actual <em>value</em> from the value attribute of an <a href="../globals.html#sahielementqueryorwebelement">Element or Query</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume this HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"with-value"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Hello World"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"without-value"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+										<p>Accessing the value of <code>[value]</code></p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> valueFromInput = <span class="hljs-keyword">await</span> _getValue(_textbox(<span class="hljs-string">'with-value'</span>)); <span class="hljs-comment">// -&gt; "Hello World"</span>
+<span class="hljs-keyword">const</span> noValue = <span class="hljs-keyword">await</span> _getValue(_div(<span class="hljs-string">'without-value'</span>)); <span class="hljs-comment">// -&gt; undefined</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -498,13 +706,30 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L15">context/sahi/fetch/fetch-api.interface.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L203">context/sahi/fetch/fetch-api.interface.ts:203</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if the element has an attribute <code>checked</code>. This is useful for checkboxes or radio inputs.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume this HTML-snippet:</p>
+										<pre><code class="language-html">   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"payment"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">debit-card</span>" /&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"payment"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"cash"</span> /&gt;</span></code></pre>
+										<p>Checks if a radio input is checked or not:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> checked = <span class="hljs-keyword">await</span> _isChecked(_radio(<span class="hljs-number">0</span>)); <span class="hljs-comment">// -&gt; true</span>
+<span class="hljs-keyword">const</span> notChecked = <span class="hljs-keyword">await</span> _isChecked(_radio(<span class="hljs-number">1</span>)); <span class="hljs-comment">// -&gt; false</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -521,13 +746,30 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L16">context/sahi/fetch/fetch-api.interface.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L224">context/sahi/fetch/fetch-api.interface.ts:224</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if an element is enabled. An element is considered as enabled when it has no <code>disabled</code> attribute set.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume this HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"enabled-input"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"disabled-input"</span> /&gt;</span></code></pre>
+										<p>Check if the inputs are enabled:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> enabled = <span class="hljs-keyword">await</span> _isEnabled(_textbox(<span class="hljs-string">'enabled-input'</span>)); <span class="hljs-comment">// -&gt; true</span>
+<span class="hljs-keyword">const</span> disabled = <span class="hljs-keyword">await</span> _isEnabled(_textbox(<span class="hljs-string">'disabled-input'</span>)); <span class="hljs-comment">// -&gt; false</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -544,13 +786,37 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L14">context/sahi/fetch/fetch-api.interface.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L182">context/sahi/fetch/fetch-api.interface.ts:182</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tests if this element is currently displayed.
+										Using a timeout of maximum one second. If a longer timeout is needed, <a href="actionapi.html#_wait">ActionApi._wait</a> can be used.
+									It uses <a href="https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#isDisplayed" class="external">WebElement.isDisplayed</a> internally.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume this HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display: none"</span>&gt;</span>Ninja Element<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+										<p>Testing the visibility of the elements:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> visible = <span class="hljs-keyword">await</span> _isVisible(_div(<span class="hljs-string">"Hello World"</span>)) <span class="hljs-comment">// -&gt; true</span>
+<span class="hljs-keyword">const</span> invisible = <span class="hljs-keyword">await</span> _isVisible(_div(<span class="hljs-string">"Ninja Element"</span>)) <span class="hljs-comment">// -&gt; false</span>
+
+<span class="hljs-comment">// Waits at most 5 seconds until element is visible</span>
+
+<span class="hljs-keyword">await</span> _wait(<span class="hljs-number">5000</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> _isVisible(_div(<span class="hljs-string">'Hello World'</span>)));
+</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -567,13 +833,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L22">context/sahi/fetch/fetch-api.interface.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L359">context/sahi/fetch/fetch-api.interface.ts:359</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a tuple describing an element&#39;s location, in pixels relative to
+									the document element.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming a modal overlay element at x: 300 and y: 400</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> [x,y] = <span class="hljs-keyword">await</span> _position(_div(<span class="hljs-string">'modal'</span>)) <span class="hljs-comment">// -&gt; [300, 400];</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -590,9 +870,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L21">context/sahi/fetch/fetch-api.interface.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L345">context/sahi/fetch/fetch-api.interface.ts:345</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Styles in HTML elements are calculated by the browser based on various CSS rules.
+										<code>_style</code> returns the computed style that is finally applicable to the element.
+										If the element inherits the named style from
+										its parent, the parent will be queried for its value. Where possible,
+										color values will be converted to their hex representation (e.g. <code>#00ff00</code>
+									instead of <code>rgb(0, 255, 0)</code>).</p>
+								</div>
+								<p>Accessing the style directly as an attribute will not return a computed style.
+								Always use <code>_style</code> instead.</p>
+								<p><em>Warning:</em> A proper assertion will be difficult as some browser may interpret it differently.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -600,6 +893,8 @@
 								</li>
 								<li>
 									<h5>attr: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -616,9 +911,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L20">context/sahi/fetch/fetch-api.interface.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/fetch/fetch-api.interface.ts#L327">context/sahi/fetch/fetch-api.interface.ts:327</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves the current text content of the documents <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/title" class="external"><code>title</code></a> element.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assuming the following document:</p>
+										<pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Tested with Sakuli<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+										<p>Accessing the current Title of the element:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">const</span> title = <span class="hljs-keyword">await</span> _title() <span class="hljs-comment">// -&gt; "Tested with Sakuli";</span></code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -724,6 +1039,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

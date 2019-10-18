@@ -106,9 +106,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L6">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L51">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:51</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invokes a single <code>keydown</code> event on the given element.
+										This is useful if you want to invoke a certain event which relies
+									on the keydown event. In most cases it has to be used together with <a href="keyboardactionsapi.html#_keyup">KeyboardActionsApi._keyUp</a></p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -119,6 +126,10 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> combo: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Optional combo key(s): can be <kbd>CTRL</kbd>, <kbd>SHIFT</kbd>, <kbd>ALT</kbd> or <kbd>META</kbd>;
+										Can also be two or more keys together like <code>&quot;CTRL|SHIFT&quot;</code></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -135,9 +146,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L8">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L76">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:76</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a single keystroke (<code>&#39;keypress&#39;</code>-event) on the element.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Performing <kbd>CTRL</kbd>+<kbd>s</kbd> on an (imaginary) web-based word-processor element:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _keyPress(_byId(<span class="hljs-string">'word-processor-canvas'</span>), <span class="hljs-string">'s'</span>, <span class="hljs-string">'CTRL'</span>)</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -148,6 +170,10 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> combo: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Optional combo key(s): can be <kbd>CTRL</kbd>, <kbd>SHIFT</kbd>, <kbd>ALT</kbd> or <kbd>META</kbd>;
+										Can also be two or more keys together like <code>&quot;CTRL|SHIFT&quot;</code></p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -164,9 +190,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L7">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L60">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:60</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invokes a single <code>keyup</code> event with the given element.
+									This is only useful when <a href="keyboardactionsapi.html#_keydown">KeyboardActionsApi._keyDown</a> is invoked previously. Some WebDrivers like Firefox will not trigger any event if there was no keypress before.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -174,6 +206,8 @@
 								</li>
 								<li>
 									<h5>charInfo: <a href="../globals.html#charinfo" class="tsd-signature-type">CharInfo</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -190,9 +224,37 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L5">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L39">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:39</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a value on an <code>&lt;input /&gt;</code> field.</p>
+								</div>
+								<p>It will clear the existing value from the input before:</p>
+								<ul>
+									<li><p>It will send each character from the <em>value</em> string to the input with an delay of 10 ms
+											using <a href="https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#sendKeys" class="external">.sendKeys</a>.
+											This ensures that components which rely on key-events (like <code>keyup</code> or <code>keydown</code>) will behave
+										as expected on the page.</p>
+									</li>
+									<li><p>When <a href="https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#sendKeys" class="external">.sendKeys</a> fails,
+										<code>_setValue</code> will try to set the value attribute of the dom element.</p>
+									</li>
+								</ul>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Assume the following HTML-snippet:</p>
+										<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>
+										<p><code>_setValue</code> can be used to enter login information:</p>
+										<pre><code class="language-typescript"><span class="hljs-keyword">await</span> _setValue(_textbox(<span class="hljs-string">'username'</span>), <span class="hljs-string">'IamGroot'</span>);
+<span class="hljs-keyword">await</span> _setValue(_password(<span class="hljs-string">'password'</span>), <span class="hljs-string">'$secret'</span>);</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -200,6 +262,8 @@
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -216,9 +280,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L9">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L85">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:85</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invokes <a href="https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebElement.html#sendKeys" class="external">.sendKeys</a> on the given element.
+									It will neither type with a delay nor set the <code>value</code>-attribute when the method fails.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -226,6 +296,8 @@
 								</li>
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -285,6 +357,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

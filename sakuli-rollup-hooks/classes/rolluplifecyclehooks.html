@@ -83,8 +83,16 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="rolluplifecyclehooks.html#logger" class="tsd-kind-icon">logger</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rolluplifecyclehooks.html#debug" class="tsd-kind-icon">debug</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rolluplifecyclehooks.html#onproject" class="tsd-kind-icon">on<wbr>Project</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rolluplifecyclehooks.html#readfilecontent" class="tsd-kind-icon">read<wbr>File<wbr>Content</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rolluplifecyclehooks.html#requestcontext" class="tsd-kind-icon">request<wbr>Context</a></li>
 							</ul>
@@ -93,7 +101,72 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="logger" class="tsd-anchor"></a>
+					<h3>logger</h3>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Maybe</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SimpleLogger</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-rollup-hooks/src/rollup-lifecycle-hooks.class.ts#L10">rollup-lifecycle-hooks.class.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="debug" class="tsd-anchor"></a>
+					<h3>debug</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-rollup-hooks/src/rollup-lifecycle-hooks.class.ts#L12">rollup-lifecycle-hooks.class.ts:12</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onproject" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Project</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Project<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Project</span>, testExecutionContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestExecutionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-rollup-hooks/src/rollup-lifecycle-hooks.class.ts#L16">rollup-lifecycle-hooks.class.ts:16</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>project: <span class="tsd-signature-type">Project</span></h5>
+								</li>
+								<li>
+									<h5>testExecutionContext: <span class="tsd-signature-type">TestExecutionContext</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="readfilecontent" class="tsd-anchor"></a>
 					<h3>read<wbr>File<wbr>Content</h3>
@@ -104,7 +177,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-rollup-hooks/src/rollup-lifecycle-hooks.class.ts#L10">rollup-lifecycle-hooks.class.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-rollup-hooks/src/rollup-lifecycle-hooks.class.ts#L20">rollup-lifecycle-hooks.class.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -130,7 +203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/60a61b3/packages/sakuli-rollup-hooks/src/rollup-lifecycle-hooks.class.ts#L28">rollup-lifecycle-hooks.class.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/9bf1332/packages/sakuli-rollup-hooks/src/rollup-lifecycle-hooks.class.ts#L62">rollup-lifecycle-hooks.class.ts:62</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -163,6 +236,15 @@
 					<li class="current tsd-kind-class">
 						<a href="rolluplifecyclehooks.html" class="tsd-kind-icon">Rollup<wbr>Lifecycle<wbr>Hooks</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="rolluplifecyclehooks.html#logger" class="tsd-kind-icon">logger</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="rolluplifecyclehooks.html#debug" class="tsd-kind-icon">debug</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="rolluplifecyclehooks.html#onproject" class="tsd-kind-icon">on<wbr>Project</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="rolluplifecyclehooks.html#readfilecontent" class="tsd-kind-icon">read<wbr>File<wbr>Content</a>
 							</li>
@@ -173,8 +255,26 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#packagetypingmapping" class="tsd-kind-icon">package<wbr>Typing<wbr>Mapping</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#enabletypescriptcommand" class="tsd-kind-icon">enable<wbr>Typescript<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#getinstalledpresets" class="tsd-kind-icon">get<wbr>Installed<wbr>Presets</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="../globals.html#readjson" class="tsd-kind-icon">read<wbr>Json</a>
+					</li>
 					<li class=" tsd-kind-function">
 						<a href="../globals.html#sakulirolluppreset" class="tsd-kind-icon">sakuli<wbr>Rollup<wbr>Preset</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-not-exported">
+						<a href="../globals.html#userinput" class="tsd-kind-icon">user<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="../globals.html#defaulttsconfig" class="tsd-kind-icon">default<wbr>TsConfig</a>
 					</li>
 				</ul>
 			</nav>
@@ -193,6 +293,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
