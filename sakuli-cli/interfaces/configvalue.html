@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TestContextEntityStates | @sakuli/core</title>
+	<title>ConfigValue | @sakuli/cli</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@sakuli/core</a>
+					<a href="../index.html" class="title">@sakuli/cli</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="testcontextentitystates.html">TestContextEntityStates</a>
+					<a href="configvalue.html">ConfigValue</a>
 				</li>
 			</ul>
-			<h1>Class TestContextEntityStates</h1>
+			<h1>Interface ConfigValue</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TestContextEntityStates</span>
+						<span class="target">ConfigValue</span>
 					</li>
 				</ul>
 			</section>
@@ -79,11 +79,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="testcontextentitystates.html#critical" class="tsd-kind-icon">CRITICAL</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="testcontextentitystates.html#error" class="tsd-kind-icon">ERROR</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="testcontextentitystates.html#ok" class="tsd-kind-icon">OK</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="testcontextentitystates.html#unknown" class="tsd-kind-icon">UNKNOWN</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="testcontextentitystates.html#warning" class="tsd-kind-icon">WARNING</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="configvalue.html#iscomment" class="tsd-kind-icon">is<wbr>Comment</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="configvalue.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
 					</div>
@@ -91,53 +88,23 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="critical" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> CRITICAL</h3>
-					<div class="tsd-signature tsd-kind-icon">CRITICAL<span class="tsd-signature-symbol">:</span> <a href="../globals.html#testcontextentitystatecritical" class="tsd-signature-type">TestContextEntityStateCritical</a><span class="tsd-signature-symbol"> =&nbsp;2</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="iscomment" class="tsd-anchor"></a>
+					<h3>is<wbr>Comment</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Comment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-core/src/runner/test-execution-context/test-context-entity-state.class.ts#L17">runner/test-execution-context/test-context-entity-state.class.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-cli/src/commands/enable-enterprise/tasks/configuration-record.type.ts#L4">commands/enable-enterprise/tasks/configuration-record.type.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="error" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> ERROR</h3>
-					<div class="tsd-signature tsd-kind-icon">ERROR<span class="tsd-signature-symbol">:</span> <a href="../globals.html#testcontextentitystateerror" class="tsd-signature-type">TestContextEntityStateError</a><span class="tsd-signature-symbol"> =&nbsp;4</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-core/src/runner/test-execution-context/test-context-entity-state.class.ts#L19">runner/test-execution-context/test-context-entity-state.class.ts:19</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="ok" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> OK</h3>
-					<div class="tsd-signature tsd-kind-icon">OK<span class="tsd-signature-symbol">:</span> <a href="../globals.html#testcontextentitystateok" class="tsd-signature-type">TestContextEntityStateOk</a><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-core/src/runner/test-execution-context/test-context-entity-state.class.ts#L15">runner/test-execution-context/test-context-entity-state.class.ts:15</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="unknown" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> UNKNOWN</h3>
-					<div class="tsd-signature tsd-kind-icon">UNKNOWN<span class="tsd-signature-symbol">:</span> <a href="../globals.html#testcontextentitystateunknown" class="tsd-signature-type">TestContextEntityStateUnknown</a><span class="tsd-signature-symbol"> =&nbsp;3</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-core/src/runner/test-execution-context/test-context-entity-state.class.ts#L18">runner/test-execution-context/test-context-entity-state.class.ts:18</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="warning" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> WARNING</h3>
-					<div class="tsd-signature tsd-kind-icon">WARNING<span class="tsd-signature-symbol">:</span> <a href="../globals.html#testcontextentitystatewarning" class="tsd-signature-type">TestContextEntityStateWarning</a><span class="tsd-signature-symbol"> =&nbsp;1</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-core/src/runner/test-execution-context/test-context-entity-state.class.ts#L16">runner/test-execution-context/test-context-entity-state.class.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-cli/src/commands/enable-enterprise/tasks/configuration-record.type.ts#L5">commands/enable-enterprise/tasks/configuration-record.type.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -155,23 +122,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class">
-						<a href="testcontextentitystates.html" class="tsd-kind-icon">Test<wbr>Context<wbr>Entity<wbr>States</a>
+					<li class="current tsd-kind-interface">
+						<a href="configvalue.html" class="tsd-kind-icon">Config<wbr>Value</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="testcontextentitystates.html#critical" class="tsd-kind-icon">CRITICAL</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="configvalue.html#iscomment" class="tsd-kind-icon">is<wbr>Comment</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="testcontextentitystates.html#error" class="tsd-kind-icon">ERROR</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="testcontextentitystates.html#ok" class="tsd-kind-icon">OK</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="testcontextentitystates.html#unknown" class="tsd-kind-icon">UNKNOWN</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="testcontextentitystates.html#warning" class="tsd-kind-icon">WARNING</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="configvalue.html#value" class="tsd-kind-icon">value</a>
 							</li>
 						</ul>
 					</li>
