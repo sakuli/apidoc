@@ -128,6 +128,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="actionapi.html#_mouseover" class="tsd-kind-icon">_mouse<wbr>Over</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="actionapi.html#_mouseup" class="tsd-kind-icon">_mouse<wbr>Up</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="actionapi.html#_navigateto" class="tsd-kind-icon">_navigate<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="actionapi.html#_pageisstable" class="tsd-kind-icon">_page<wbr>IsStable</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="actionapi.html#_removefocus" class="tsd-kind-icon">_remove<wbr>Focus</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="actionapi.html#_rightclick" class="tsd-kind-icon">_right<wbr>Click</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="actionapi.html#_rtewrite" class="tsd-kind-icon">_rte<wbr>Write</a></li>
@@ -155,7 +156,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="focusactionapi.html">FocusActionApi</a>.<a href="focusactionapi.html#_blur">_blur</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L29">context/sahi/action/focus-action/focus-actions.interface.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L29">context/sahi/action/focus-action/focus-actions.interface.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -186,7 +187,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_check">_check</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L80">context/sahi/action/mouse-action/mouse-action-api.interface.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L84">context/sahi/action/mouse-action/mouse-action-api.interface.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -210,14 +211,14 @@
 					<a name="_click" class="tsd-anchor"></a>
 					<h3>_click</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">_click<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a>, combo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">_click<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><a href="../globals.html#sahielementqueryorwebelement" class="tsd-signature-type">SahiElementQueryOrWebElement</a>, combo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#clickoptions" class="tsd-signature-type">ClickOptions</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#clickoptions" class="tsd-signature-type">ClickOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_click">_click</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L28">context/sahi/action/mouse-action/mouse-action-api.interface.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L32">context/sahi/action/mouse-action/mouse-action-api.interface.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -229,7 +230,9 @@
 									<dd><br />
 										<pre><code class="language-typescript">_click(_button(<span class="hljs-string">"Click Me"</span>));
 _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-string">"CTRL"</span>); <span class="hljs-comment">// clicks with CTRL key pressed</span>
-_click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-string">"CTRL|SHIFT"</span>); <span class="hljs-comment">// clicks with CTRL and SHIFT keys pressed</span></code></pre>
+_click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-string">"CTRL|SHIFT"</span>); <span class="hljs-comment">// clicks with CTRL and SHIFT keys pressed</span>
+_click(_button(<span class="hljs-string">"Click Me"</span>), {force: <span class="hljs-literal">true</span>}); <span class="hljs-comment">// clicks without validation</span>
+_click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-string">"CTRL"</span>, {force: <span class="hljs-literal">true</span>}); <span class="hljs-comment">//clicks with CTRL without validation</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -242,10 +245,16 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> combo: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> combo: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#clickoptions" class="tsd-signature-type">ClickOptions</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Optional combo key(s): can be <kbd>CTRL</kbd>, <kbd>SHIFT</kbd>, <kbd>ALT</kbd> or <kbd>META</kbd>;
 										Can also be two or more keys together like <code>&quot;CTRL|SHIFT&quot;</code></p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#clickoptions" class="tsd-signature-type">ClickOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>disables validations prior to the click action to enforce clicks where an element e.g. is covered</p>
 									</div>
 								</li>
 							</ul>
@@ -265,7 +274,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_dragdrop">_dragDrop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L99">context/sahi/action/mouse-action/mouse-action-api.interface.ts:99</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L103">context/sahi/action/mouse-action/mouse-action-api.interface.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -301,7 +310,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_dragdropxy">_dragDropXY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L113">context/sahi/action/mouse-action/mouse-action-api.interface.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L117">context/sahi/action/mouse-action/mouse-action-api.interface.ts:117</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -343,7 +352,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="commonactionsapi.html">CommonActionsApi</a>.<a href="commonactionsapi.html#_eval">_eval</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L35">context/sahi/action/common-action/common-actions.interface.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L35">context/sahi/action/common-action/common-actions.interface.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -404,7 +413,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="focusactionapi.html">FocusActionApi</a>.<a href="focusactionapi.html#_focus">_focus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L18">context/sahi/action/focus-action/focus-actions.interface.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L18">context/sahi/action/focus-action/focus-actions.interface.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -440,7 +449,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="commonactionsapi.html">CommonActionsApi</a>.<a href="commonactionsapi.html#_highlight">_highlight</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L46">context/sahi/action/common-action/common-actions.interface.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L46">context/sahi/action/common-action/common-actions.interface.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -480,7 +489,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="keyboardactionsapi.html">KeyboardActionsApi</a>.<a href="keyboardactionsapi.html#_keydown">_keyDown</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L51">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L51">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -521,7 +530,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="keyboardactionsapi.html">KeyboardActionsApi</a>.<a href="keyboardactionsapi.html#_keypress">_keyPress</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L76">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L76">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -566,7 +575,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="keyboardactionsapi.html">KeyboardActionsApi</a>.<a href="keyboardactionsapi.html#_keyup">_keyUp</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L60">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L60">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -601,7 +610,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_mousedown">_mouseDown</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L41">context/sahi/action/mouse-action/mouse-action-api.interface.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L45">context/sahi/action/mouse-action/mouse-action-api.interface.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -648,7 +657,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_mouseover">_mouseOver</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L73">context/sahi/action/mouse-action/mouse-action-api.interface.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L77">context/sahi/action/mouse-action/mouse-action-api.interface.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -684,7 +693,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_mouseup">_mouseUp</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L55">context/sahi/action/mouse-action/mouse-action-api.interface.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L59">context/sahi/action/mouse-action/mouse-action-api.interface.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -732,7 +741,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="commonactionsapi.html">CommonActionsApi</a>.<a href="commonactionsapi.html#_navigateto">_navigateTo</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L89">context/sahi/action/common-action/common-actions.interface.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L89">context/sahi/action/common-action/common-actions.interface.ts:89</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -777,6 +786,60 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="_pageisstable" class="tsd-anchor"></a>
+					<h3>_page<wbr>IsStable</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">_page<wbr>IsStable<span class="tsd-signature-symbol">(</span>timeout<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, interval<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="commonactionsapi.html">CommonActionsApi</a>.<a href="commonactionsapi.html#_pageisstable">_pageIsStable</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L113">context/sahi/action/common-action/common-actions.interface.ts:113</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Continuously fetches the page source and checks for DOM changes.
+									Will be repeated every $timeout milliseconds until either the DOM does no longer change or $timeout is reached</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-comment">// Wait for a stable DOM with default timeout and interval, continue test execution if it does not stabilize within timeout</span>
+<span class="hljs-keyword">await</span> _pageIsStable();
+
+<span class="hljs-comment">// Wait for a stable DOM with custom timeout and default interval, continue test execution if it does not stabilize within timeout</span>
+<span class="hljs-keyword">await</span> _pageIsStable(<span class="hljs-number">5000</span>);
+
+<span class="hljs-comment">// Wait for a stable DOM with custom timeout and custom interval, continue test execution if it does not stabilize within timeout</span>
+<span class="hljs-keyword">await</span> _pageIsStable(<span class="hljs-number">5000</span>, <span class="hljs-number">100</span>);
+
+<span class="hljs-comment">// Wait for a stable DOM, stop test execution if it does not stabilize within timeout</span>
+<span class="hljs-keyword">await</span> _assertTrue(_pageIsStable(<span class="hljs-number">5000</span>, <span class="hljs-number">100</span>));</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> timeout: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Maximum timout in ms to wait for DOM stabilization. Default: 2000 ms</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> interval: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Interval between stability checks in ms. Default: 200 ms</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 					<a name="_removefocus" class="tsd-anchor"></a>
 					<h3>_remove<wbr>Focus</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
@@ -787,7 +850,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="focusactionapi.html">FocusActionApi</a>.<a href="focusactionapi.html#_removefocus">_removeFocus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L30">context/sahi/action/focus-action/focus-actions.interface.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/focus-action/focus-actions.interface.ts#L30">context/sahi/action/focus-action/focus-actions.interface.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -811,7 +874,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_rightclick">_rightClick</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L64">context/sahi/action/mouse-action/mouse-action-api.interface.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L68">context/sahi/action/mouse-action/mouse-action-api.interface.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -847,7 +910,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="commonactionsapi.html">CommonActionsApi</a>.<a href="commonactionsapi.html#_rtewrite">_rteWrite</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L97">context/sahi/action/common-action/common-actions.interface.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L121">context/sahi/action/common-action/common-actions.interface.ts:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -882,7 +945,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_setselected">_setSelected</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L140">context/sahi/action/mouse-action/mouse-action-api.interface.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L144">context/sahi/action/mouse-action/mouse-action-api.interface.ts:144</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -933,7 +996,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="keyboardactionsapi.html">KeyboardActionsApi</a>.<a href="keyboardactionsapi.html#_setvalue">_setValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L39">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L39">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -990,7 +1053,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="keyboardactionsapi.html">KeyboardActionsApi</a>.<a href="keyboardactionsapi.html#_type">_type</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L85">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/keyboard-action/keyboard-actions.interface.ts#L85">context/sahi/action/keyboard-action/keyboard-actions.interface.ts:85</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1025,7 +1088,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_uncheck">_uncheck</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L87">context/sahi/action/mouse-action/mouse-action-api.interface.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L91">context/sahi/action/mouse-action/mouse-action-api.interface.ts:91</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1056,7 +1119,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="commonactionsapi.html">CommonActionsApi</a>.<a href="commonactionsapi.html#_wait">_wait</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L67">context/sahi/action/common-action/common-actions.interface.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L67">context/sahi/action/common-action/common-actions.interface.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1105,7 +1168,7 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="mouseactionapi.html">MouseActionApi</a>.<a href="mouseactionapi.html#_xy">_xy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L8">context/sahi/action/mouse-action/mouse-action-api.interface.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/mouse-action/mouse-action-api.interface.ts#L9">context/sahi/action/mouse-action/mouse-action-api.interface.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1182,6 +1245,9 @@ _click(_button(<span class="hljs-string">"Click Me"</span>), <span class="hljs-s
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="actionapi.html#_navigateto" class="tsd-kind-icon">_navigate<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="actionapi.html#_pageisstable" class="tsd-kind-icon">_page<wbr>IsStable</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="actionapi.html#_removefocus" class="tsd-kind-icon">_remove<wbr>Focus</a>

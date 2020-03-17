@@ -87,6 +87,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="commonactionsapi.html#_eval" class="tsd-kind-icon">_eval</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="commonactionsapi.html#_highlight" class="tsd-kind-icon">_highlight</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="commonactionsapi.html#_navigateto" class="tsd-kind-icon">_navigate<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="commonactionsapi.html#_pageisstable" class="tsd-kind-icon">_page<wbr>IsStable</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="commonactionsapi.html#_rtewrite" class="tsd-kind-icon">_rte<wbr>Write</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="commonactionsapi.html#_wait" class="tsd-kind-icon">_wait</a></li>
 							</ul>
@@ -106,7 +107,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L35">context/sahi/action/common-action/common-actions.interface.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L35">context/sahi/action/common-action/common-actions.interface.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -166,7 +167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L46">context/sahi/action/common-action/common-actions.interface.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L46">context/sahi/action/common-action/common-actions.interface.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -205,7 +206,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L89">context/sahi/action/common-action/common-actions.interface.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L89">context/sahi/action/common-action/common-actions.interface.ts:89</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -250,6 +251,59 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="_pageisstable" class="tsd-anchor"></a>
+					<h3>_page<wbr>IsStable</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">_page<wbr>IsStable<span class="tsd-signature-symbol">(</span>timeout<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, interval<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L113">context/sahi/action/common-action/common-actions.interface.ts:113</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Continuously fetches the page source and checks for DOM changes.
+									Will be repeated every $timeout milliseconds until either the DOM does no longer change or $timeout is reached</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span class="hljs-comment">// Wait for a stable DOM with default timeout and interval, continue test execution if it does not stabilize within timeout</span>
+<span class="hljs-keyword">await</span> _pageIsStable();
+
+<span class="hljs-comment">// Wait for a stable DOM with custom timeout and default interval, continue test execution if it does not stabilize within timeout</span>
+<span class="hljs-keyword">await</span> _pageIsStable(<span class="hljs-number">5000</span>);
+
+<span class="hljs-comment">// Wait for a stable DOM with custom timeout and custom interval, continue test execution if it does not stabilize within timeout</span>
+<span class="hljs-keyword">await</span> _pageIsStable(<span class="hljs-number">5000</span>, <span class="hljs-number">100</span>);
+
+<span class="hljs-comment">// Wait for a stable DOM, stop test execution if it does not stabilize within timeout</span>
+<span class="hljs-keyword">await</span> _assertTrue(_pageIsStable(<span class="hljs-number">5000</span>, <span class="hljs-number">100</span>));</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> timeout: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Maximum timout in ms to wait for DOM stabilization. Default: 2000 ms</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> interval: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Interval between stability checks in ms. Default: 200 ms</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="_rtewrite" class="tsd-anchor"></a>
 					<h3>_rte<wbr>Write</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -259,7 +313,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L97">context/sahi/action/common-action/common-actions.interface.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L121">context/sahi/action/common-action/common-actions.interface.ts:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -293,7 +347,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L67">context/sahi/action/common-action/common-actions.interface.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/sahi/action/common-action/common-actions.interface.ts#L67">context/sahi/action/common-action/common-actions.interface.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -356,6 +410,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="commonactionsapi.html#_navigateto" class="tsd-kind-icon">_navigate<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="commonactionsapi.html#_pageisstable" class="tsd-kind-icon">_page<wbr>IsStable</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="commonactionsapi.html#_rtewrite" class="tsd-kind-icon">_rte<wbr>Write</a>

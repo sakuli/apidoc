@@ -64,6 +64,27 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Application interface</p>
+					</div>
+					<p>Interface to open and close applications</p>
+					<dl class="tsd-comment-tags">
+						<dt>param</dt>
+						<dd><p>Application name, might be a single execute or a whole path. <em>Note</em>: if the application path and / or name has whitespaces in it one needs to escape them properly. See example below.</p>
+						</dd>
+						<dt>example</dt>
+						<dd><p>Creating an Application instance</p>
+							<pre><code class="language-typescript"><span class="hljs-keyword">const</span> calc = <span class="hljs-keyword">new</span> Application(<span class="hljs-string">"gnome-calculator"</span>);</code></pre>
+							<p>Pass arguments to application</p>
+							<pre><code class="language-typescript"><span class="hljs-keyword">const</span> example = <span class="hljs-keyword">new</span> Application(<span class="hljs-string">"/path/to/my/application --param1 --param2 param3"</span>);</code></pre>
+							<p>Pass arguments to application containing whitespaces</p>
+							<pre><code class="language-typescript"><span class="hljs-keyword">const</span> example = <span class="hljs-keyword">new</span> Application(<span class="hljs-string">"/path\\ with\\ whitespaces/application\\ name --param1 --param2 param3"</span>);</code></pre>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -105,9 +126,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L10">context/common/application/application.interface.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L47">context/common/application/application.interface.ts:47</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Closes the application</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -128,9 +154,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L6">context/common/application/application.interface.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L37">context/common/application/application.interface.ts:37</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Not yet implemented</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="application.html" class="tsd-signature-type">Application</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -145,9 +176,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L8">context/common/application/application.interface.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L42">context/common/application/application.interface.ts:42</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Not yet implemented</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -168,9 +204,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L20">context/common/application/application.interface.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L72">context/common/application/application.interface.ts:72</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the application name passed to the constructor</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -185,9 +226,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L16">context/common/application/application.interface.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L62">context/common/application/application.interface.ts:62</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Not yet implemented</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="region.html" class="tsd-signature-type">Region</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -202,9 +248,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L18">context/common/application/application.interface.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L67">context/common/application/application.interface.ts:67</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Not yet implemented</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -225,9 +276,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L12">context/common/application/application.interface.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L52">context/common/application/application.interface.ts:52</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Force closes the application</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -248,9 +304,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L4">context/common/application/application.interface.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L32">context/common/application/application.interface.ts:32</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Opens the application</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="application.html" class="tsd-signature-type">Application</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -265,9 +326,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/d9c527b/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L14">context/common/application/application.interface.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-legacy/src/context/common/application/application.interface.ts#L57">context/common/application/application.interface.ts:57</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Configures an initial startup delay in seconds. Used to wait for applications which might require some time to start.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
