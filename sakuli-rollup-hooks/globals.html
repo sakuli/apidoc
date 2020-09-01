@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>@sakuli/rollup-hooks</title>
-	<meta name="description" content="">
+	<meta name="description" content="Documentation for @sakuli/rollup-hooks">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -54,7 +54,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> @sakuli/rollup-hooks</h1>
+			<h1>@sakuli/rollup-hooks</h1>
 		</div>
 	</div>
 </header>
@@ -74,6 +74,7 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable"><a href="globals.html#execa" class="tsd-kind-icon">execa</a></li>
 								<li class="tsd-kind-variable"><a href="globals.html#packagetypingmapping" class="tsd-kind-icon">package<wbr>Typing<wbr>Mapping</a></li>
 							</ul>
 						</section>
@@ -86,7 +87,7 @@
 								<li class="tsd-kind-function"><a href="globals.html#getsakuliversion" class="tsd-kind-icon">get<wbr>Sakuli<wbr>Version</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#readjson" class="tsd-kind-icon">read<wbr>Json</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#sakulirolluppreset" class="tsd-kind-icon">sakuli<wbr>Rollup<wbr>Preset</a></li>
-								<li class="tsd-kind-function tsd-is-not-exported"><a href="globals.html#userinput" class="tsd-kind-icon">user<wbr>Input</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#userinput" class="tsd-kind-icon">user<wbr>Input</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -101,12 +102,444 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable">
-					<a name="packagetypingmapping" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> package<wbr>Typing<wbr>Mapping</h3>
-					<div class="tsd-signature tsd-kind-icon">package<wbr>Typing<wbr>Mapping<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map&lt;string, string&gt;()</span></div>
+					<a name="execa" class="tsd-anchor"></a>
+					<h3>execa</h3>
+					<div class="tsd-signature tsd-kind-icon">execa<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>commandSync<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>sync<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/package-typing-mapping.const.ts#L1">ts-support/package-typing-mapping.const.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/get-sakuli-version.function.ts#L8">src/ts-support/get-sakuli-version.function.ts:8</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, arguments<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">execa.ExecaChildProcess</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, arguments<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">execa.ExecaChildProcess</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">execa.ExecaChildProcess</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">execa.ExecaChildProcess</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Execute a file.</p>
+											</div>
+											<p>Think of this as a mix of <code>child_process.execFile</code> and <code>child_process.spawn</code>.</p>
+											<dl class="tsd-comment-tags">
+												<dt>example</dt>
+												<dd><pre><code><span class="hljs-keyword">import</span> execa <span class="hljs-keyword">from</span> <span class="hljs-string">'execa'</span>;
+
+<span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {
+<span class="hljs-keyword">const</span> {stdout} = <span class="hljs-keyword">await</span> execa(<span class="hljs-params">'echo', ['unicorns']</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-params">stdout</span>);
+<span class="hljs-comment">//=&gt; 'unicorns'</span>
+
+<span class="hljs-comment">// Cancelling a spawned process</span>
+<span class="hljs-keyword">const</span> subprocess = execa(<span class="hljs-params">'node'</span>);
+setTimeout(<span class="hljs-params">(<span class="hljs-params"></span>) =&gt; { spawned.cancel(<span class="hljs-params"></span>) }, 1000</span>);
+<span class="hljs-keyword">try</span> {
+<span class="hljs-keyword">await</span> subprocess;
+} <span class="hljs-keyword">catch</span> (<span class="hljs-params">error</span>) {
+<span class="hljs-built_in">console</span>.log(<span class="hljs-params">subprocess.killed</span>); <span class="hljs-comment">// true</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-params">error.isCanceled</span>); <span class="hljs-comment">// true</span>
+}
+}</span>)<span class="hljs-params">()</span>;
+
+// <span class="hljs-params">Pipe</span> <span class="hljs-params">the</span> <span class="hljs-params">child</span> <span class="hljs-params">process</span> <span class="hljs-params">stdout</span> <span class="hljs-params">to</span> <span class="hljs-params">the</span> <span class="hljs-params">current</span> <span class="hljs-params">stdout</span>
+<span class="hljs-params">execa</span>(<span class="hljs-params">'echo', ['unicorns']</span>).<span class="hljs-params">stdout</span>.<span class="hljs-params">pipe</span>(<span class="hljs-params">process.stdout</span>);</span></code></pre></dd>
+											</dl>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>file: <span class="tsd-signature-type">string</span></h5>
+												<div class="tsd-comment tsd-typography">
+													<p>The program/script to execute.</p>
+												</div>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> arguments: <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+												<div class="tsd-comment tsd-typography">
+													<p>Arguments to pass to <code>file</code> on execution.</p>
+												</div>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.Options</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">execa.ExecaChildProcess</span></h4>
+										<p>A <a href="https://nodejs.org/api/child_process.html#child_process_class_childprocess"><code>child_process</code> instance</a>, which is enhanced to also be a <code>Promise</code> for a result <code>Object</code> with <code>stdout</code> and <code>stderr</code> properties.</p>
+									</li>
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>file: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> arguments: <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">execa.ExecaChildProcess</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>file: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.Options</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">execa.ExecaChildProcess</span></h4>
+									</li>
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>file: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">execa.ExecaChildProcess</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>command<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">execa.ExecaChildProcess</span></li>
+									<li class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">execa.ExecaChildProcess</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:433</li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Same as <code>execa()</code> except both file and arguments are specified in a single <code>command</code> string. For example, <code>execa(&#39;echo&#39;, [&#39;unicorns&#39;])</code> is the same as <code>execa.command(&#39;echo unicorns&#39;)</code>.</p>
+											</div>
+											<p>If the file or an argument contains spaces, they must be escaped with backslashes. This matters especially if <code>command</code> is not a constant but a variable, for example with <code>__dirname</code> or <code>process.cwd()</code>. Except for spaces, no escaping/quoting is needed.</p>
+											<p>The <code>shell</code> option must be used if the <code>command</code> uses shell-specific features, as opposed to being a simple <code>file</code> followed by its <code>arguments</code>.</p>
+											<dl class="tsd-comment-tags">
+												<dt>example</dt>
+												<dd><pre><code><span class="hljs-keyword">import</span> execa <span class="hljs-keyword">from</span> <span class="hljs-string">'execa'</span>;
+
+<span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {
+<span class="hljs-keyword">const</span> {stdout} = <span class="hljs-keyword">await</span> execa.command(<span class="hljs-params">'echo unicorns'</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-params">stdout</span>);
+<span class="hljs-comment">//=&gt; 'unicorns'</span>
+}</span>)<span class="hljs-params">()</span>;</span></code></pre></dd>
+											</dl>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>command: <span class="tsd-signature-type">string</span></h5>
+												<div class="tsd-comment tsd-typography">
+													<p>The program/script to execute and its arguments.</p>
+												</div>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.Options</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">execa.ExecaChildProcess</span></h4>
+										<p>A <a href="https://nodejs.org/api/child_process.html#child_process_class_childprocess"><code>child_process</code> instance</a>, which is enhanced to also be a <code>Promise</code> for a result <code>Object</code> with <code>stdout</code> and <code>stderr</code> properties.</p>
+									</li>
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:434</li>
+											</ul>
+										</aside>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>command: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">execa.ExecaChildProcess</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>command<wbr>Sync<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">command<wbr>Sync<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.SyncOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExecaSyncReturnValue</span></li>
+									<li class="tsd-signature tsd-kind-icon">command<wbr>Sync<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.SyncOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExecaSyncReturnValue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:442</li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Same as <code>execa.command()</code> but synchronous.</p>
+											</div>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>command: <span class="tsd-signature-type">string</span></h5>
+												<div class="tsd-comment tsd-typography">
+													<p>The program/script to execute and its arguments.</p>
+												</div>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.SyncOptions</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ExecaSyncReturnValue</span></h4>
+										<p>A result <code>Object</code> with <code>stdout</code> and <code>stderr</code> properties.</p>
+									</li>
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:443</li>
+											</ul>
+										</aside>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>command: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.SyncOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ExecaSyncReturnValue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>node<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">(</span>scriptPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, arguments<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.NodeOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">execa.ExecaChildProcess</span></li>
+									<li class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">(</span>scriptPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, arguments<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">execa.ExecaChildProcess</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+									<li class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">(</span>scriptPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">execa.ExecaChildProcess</span></li>
+									<li class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">(</span>scriptPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">execa.ExecaChildProcess</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:457</li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Execute a Node.js script as a child process.</p>
+											</div>
+											<p>Same as <code>execa(&#39;node&#39;, [scriptPath, ...arguments], options)</code> except (like <a href="https://nodejs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options"><code>child_process#fork()</code></a>):</p>
+											<ul>
+												<li>the current Node version and options are used. This can be overridden using the <code>nodePath</code> and <code>nodeArguments</code> options.</li>
+												<li>the <code>shell</code> option cannot be used</li>
+												<li>an extra channel <a href="https://nodejs.org/api/child_process.html#child_process_options_stdio"><code>ipc</code></a> is passed to <a href="#stdio"><code>stdio</code></a></li>
+											</ul>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>scriptPath: <span class="tsd-signature-type">string</span></h5>
+												<div class="tsd-comment tsd-typography">
+													<p>Node.js script to execute.</p>
+												</div>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> arguments: <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+												<div class="tsd-comment tsd-typography">
+													<p>Arguments to pass to <code>scriptPath</code> on execution.</p>
+												</div>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.NodeOptions</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">execa.ExecaChildProcess</span></h4>
+										<p>A <a href="https://nodejs.org/api/child_process.html#child_process_class_childprocess"><code>child_process</code> instance</a>, which is enhanced to also be a <code>Promise</code> for a result <code>Object</code> with <code>stdout</code> and <code>stderr</code> properties.</p>
+									</li>
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:462</li>
+											</ul>
+										</aside>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>scriptPath: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> arguments: <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">execa.ExecaChildProcess</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:467</li>
+											</ul>
+										</aside>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>scriptPath: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.Options</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">execa.ExecaChildProcess</span></h4>
+									</li>
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:468</li>
+											</ul>
+										</aside>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>scriptPath: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.Options</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">execa.ExecaChildProcess</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>sync<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">sync<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, arguments<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.SyncOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExecaSyncReturnValue</span></li>
+									<li class="tsd-signature tsd-kind-icon">sync<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, arguments<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.SyncOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExecaSyncReturnValue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+									<li class="tsd-signature tsd-kind-icon">sync<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.SyncOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExecaSyncReturnValue</span></li>
+									<li class="tsd-signature tsd-kind-icon">sync<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">execa.SyncOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExecaSyncReturnValue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:396</li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Execute a file synchronously.</p>
+											</div>
+											<p>This method throws an <code>Error</code> if the command fails.</p>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>file: <span class="tsd-signature-type">string</span></h5>
+												<div class="tsd-comment tsd-typography">
+													<p>The program/script to execute.</p>
+												</div>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> arguments: <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+												<div class="tsd-comment tsd-typography">
+													<p>Arguments to pass to <code>file</code> on execution.</p>
+												</div>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.SyncOptions</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ExecaSyncReturnValue</span></h4>
+										<p>A result <code>Object</code> with <code>stdout</code> and <code>stderr</code> properties.</p>
+									</li>
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:401</li>
+											</ul>
+										</aside>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>file: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> arguments: <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.SyncOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ExecaSyncReturnValue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:406</li>
+											</ul>
+										</aside>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>file: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.SyncOptions</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ExecaSyncReturnValue</span></h4>
+									</li>
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in node_modules/execa/index.d.ts:407</li>
+											</ul>
+										</aside>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>file: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">execa.SyncOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ExecaSyncReturnValue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="packagetypingmapping" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> package<wbr>Typing<wbr>Mapping</h3>
+					<div class="tsd-signature tsd-kind-icon">package<wbr>Typing<wbr>Mapping<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, string&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/package-typing-mapping.const.ts#L1">src/ts-support/package-typing-mapping.const.ts:1</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -123,7 +556,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/contains-typescript.function.ts#L4">ts-support/contains-typescript.function.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/contains-typescript.function.ts#L4">src/ts-support/contains-typescript.function.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -146,7 +579,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/enable-typescript-command.class.ts#L26">ts-support/enable-typescript-command.class.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/enable-typescript-command.class.ts#L26">src/ts-support/enable-typescript-command.class.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CommandModule</span></h4>
@@ -163,7 +596,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/get-installed-presets.function.ts#L5">ts-support/get-installed-presets.function.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/get-installed-presets.function.ts#L4">src/ts-support/get-installed-presets.function.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -186,7 +619,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/get-sakuli-version.function.ts#L7">ts-support/get-sakuli-version.function.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/get-sakuli-version.function.ts#L10">src/ts-support/get-sakuli-version.function.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -209,7 +642,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/read-json.function.ts#L4">read-json.function.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/read-json.function.ts#L3">src/read-json.function.ts:3</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -238,7 +671,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/index.ts#L6">index.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/index.ts#L6">src/index.ts:6</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -251,17 +684,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="userinput" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> user<wbr>Input</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-function">
 						<li class="tsd-signature tsd-kind-icon">user<wbr>Input<span class="tsd-signature-symbol">(</span>question<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/enable-typescript-command.class.ts#L16">ts-support/enable-typescript-command.class.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/enable-typescript-command.class.ts#L16">src/ts-support/enable-typescript-command.class.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -283,7 +716,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>TsConfig<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L2">ts-support/default-ts-config.const.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L1">src/ts-support/default-ts-config.const.ts:1</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
@@ -292,66 +725,66 @@
 						<div class="tsd-signature tsd-kind-icon">compiler<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L3">ts-support/default-ts-config.const.ts:3</a></li>
+								<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L2">src/ts-support/default-ts-config.const.ts:2</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="defaulttsconfig.compileroptions.lib" class="tsd-anchor"></a>
 							<h3>lib</h3>
-							<div class="tsd-signature tsd-kind-icon">lib<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&quot;es2017&quot;]</span></div>
+							<div class="tsd-signature tsd-kind-icon">lib<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&quot;es2017&quot;]</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L8">ts-support/default-ts-config.const.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L7">src/ts-support/default-ts-config.const.ts:7</a></li>
 								</ul>
 							</aside>
 						</section>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="defaulttsconfig.compileroptions.module" class="tsd-anchor"></a>
 							<h3>module</h3>
-							<div class="tsd-signature tsd-kind-icon">module<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;commonjs&quot;</span></div>
+							<div class="tsd-signature tsd-kind-icon">module<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;commonjs&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L4">ts-support/default-ts-config.const.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L3">src/ts-support/default-ts-config.const.ts:3</a></li>
 								</ul>
 							</aside>
 						</section>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="defaulttsconfig.compileroptions.noimplicitany" class="tsd-anchor"></a>
 							<h3>no<wbr>Implicit<wbr>Any</h3>
-							<div class="tsd-signature tsd-kind-icon">no<wbr>Implicit<wbr>Any<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
+							<div class="tsd-signature tsd-kind-icon">no<wbr>Implicit<wbr>Any<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L6">ts-support/default-ts-config.const.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L5">src/ts-support/default-ts-config.const.ts:5</a></li>
 								</ul>
 							</aside>
 						</section>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="defaulttsconfig.compileroptions.sourcemap" class="tsd-anchor"></a>
 							<h3>source<wbr>Map</h3>
-							<div class="tsd-signature tsd-kind-icon">source<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
+							<div class="tsd-signature tsd-kind-icon">source<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L7">ts-support/default-ts-config.const.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L6">src/ts-support/default-ts-config.const.ts:6</a></li>
 								</ul>
 							</aside>
 						</section>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="defaulttsconfig.compileroptions.target" class="tsd-anchor"></a>
 							<h3>target</h3>
-							<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;es2017&quot;</span></div>
+							<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;es2017&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L5">ts-support/default-ts-config.const.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L4">src/ts-support/default-ts-config.const.ts:4</a></li>
 								</ul>
 							</aside>
 						</section>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="defaulttsconfig.compileroptions.types" class="tsd-anchor"></a>
 							<h3>types</h3>
-							<div class="tsd-signature tsd-kind-icon">types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+							<div class="tsd-signature tsd-kind-icon">types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/2f894ed/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L9">ts-support/default-ts-config.const.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-rollup-hooks/src/ts-support/default-ts-config.const.ts#L8">src/ts-support/default-ts-config.const.ts:8</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -371,6 +804,9 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
 						<a href="classes/rolluplifecyclehooks.html" class="tsd-kind-icon">Rollup<wbr>Lifecycle<wbr>Hooks</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#execa" class="tsd-kind-icon">execa</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#packagetypingmapping" class="tsd-kind-icon">package<wbr>Typing<wbr>Mapping</a>
@@ -393,7 +829,7 @@
 					<li class=" tsd-kind-function">
 						<a href="globals.html#sakulirolluppreset" class="tsd-kind-icon">sakuli<wbr>Rollup<wbr>Preset</a>
 					</li>
-					<li class=" tsd-kind-function tsd-is-not-exported">
+					<li class=" tsd-kind-function">
 						<a href="globals.html#userinput" class="tsd-kind-icon">user<wbr>Input</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
@@ -409,57 +845,8 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>
