@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for @sakuli/legacy">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">@sakuli/legacy</a>
 				</li>
 				<li>
 					<a href="legacylifecyclehooks.html">LegacyLifecycleHooks</a>
@@ -94,6 +93,9 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="legacylifecyclehooks.html#builder" class="tsd-kind-icon">builder</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="legacylifecyclehooks.html#currenttest" class="tsd-kind-icon">current<wbr>Test</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="legacylifecyclehooks.html#driver" class="tsd-kind-icon">driver</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="legacylifecyclehooks.html#driverloggingadapter" class="tsd-kind-icon">driver<wbr>Logging<wbr>Adapter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="legacylifecyclehooks.html#properties" class="tsd-kind-icon">properties</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="legacylifecyclehooks.html#reusebrowser" class="tsd-kind-icon">reuse<wbr>Browser</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="legacylifecyclehooks.html#uionly" class="tsd-kind-icon">ui<wbr>Only</a></li>
 							</ul>
 						</section>
@@ -105,6 +107,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="legacylifecyclehooks.html#beforeexecution" class="tsd-kind-icon">before<wbr>Execution</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="legacylifecyclehooks.html#beforerunfile" class="tsd-kind-icon">before<wbr>Run<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="legacylifecyclehooks.html#onproject" class="tsd-kind-icon">on<wbr>Project</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="legacylifecyclehooks.html#onsignal" class="tsd-kind-icon">on<wbr>Signal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="legacylifecyclehooks.html#onunhandlederror" class="tsd-kind-icon">on<wbr>Unhandled<wbr>Error</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="legacylifecyclehooks.html#requestcontext" class="tsd-kind-icon">request<wbr>Context</a></li>
 							</ul>
 						</section>
@@ -117,13 +121,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Legacy<wbr>Lifecycle<wbr>Hooks<span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Builder</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="legacylifecyclehooks.html" class="tsd-signature-type">LegacyLifecycleHooks</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Legacy<wbr>Lifecycle<wbr>Hooks<span class="tsd-signature-symbol">(</span>builder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Builder</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="legacylifecyclehooks.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLifecycleHooks</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/legacy-lifecycle-hooks.class.ts#L32">src/context/legacy-lifecycle-hooks.class.ts:32</a></li>
+									<li>Defined in context/legacy-lifecycle-hooks.class.ts:47</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -132,7 +136,7 @@
 									<h5>builder: <span class="tsd-signature-type">Builder</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="legacylifecyclehooks.html" class="tsd-signature-type">LegacyLifecycleHooks</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="legacylifecyclehooks.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLifecycleHooks</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -141,12 +145,9 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="builder" class="tsd-anchor"></a>
-					<h3>builder</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> builder</h3>
 					<div class="tsd-signature tsd-kind-icon">builder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Builder</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/legacy-lifecycle-hooks.class.ts#L34">src/context/legacy-lifecycle-hooks.class.ts:34</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
@@ -155,7 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Test<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Maybe</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/legacy-lifecycle-hooks.class.ts#L31">src/context/legacy-lifecycle-hooks.class.ts:31</a></li>
+							<li>Defined in context/legacy-lifecycle-hooks.class.ts:43</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -170,7 +171,37 @@
 					<div class="tsd-signature tsd-kind-icon">driver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Maybe</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ThenableWebDriver</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/legacy-lifecycle-hooks.class.ts#L26">src/context/legacy-lifecycle-hooks.class.ts:26</a></li>
+							<li>Defined in context/legacy-lifecycle-hooks.class.ts:38</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="driverloggingadapter" class="tsd-anchor"></a>
+					<h3>driver<wbr>Logging<wbr>Adapter</h3>
+					<div class="tsd-signature tsd-kind-icon">driver<wbr>Logging<wbr>Adapter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Maybe</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DriverLoggingAdapter</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in context/legacy-lifecycle-hooks.class.ts:47</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="properties" class="tsd-anchor"></a>
+					<h3>properties</h3>
+					<div class="tsd-signature tsd-kind-icon">properties<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Maybe</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">LegacyProjectProperties</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in context/legacy-lifecycle-hooks.class.ts:46</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="reusebrowser" class="tsd-anchor"></a>
+					<h3>reuse<wbr>Browser</h3>
+					<div class="tsd-signature tsd-kind-icon">reuse<wbr>Browser<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in context/legacy-lifecycle-hooks.class.ts:45</li>
 						</ul>
 					</aside>
 				</section>
@@ -180,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">ui<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/legacy-lifecycle-hooks.class.ts#L32">src/context/legacy-lifecycle-hooks.class.ts:32</a></li>
+							<li>Defined in context/legacy-lifecycle-hooks.class.ts:44</li>
 						</ul>
 					</aside>
 				</section>
@@ -197,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/legacy-lifecycle-hooks.class.ts#L58">src/context/legacy-lifecycle-hooks.class.ts:58</a></li>
+									<li>Defined in context/legacy-lifecycle-hooks.class.ts:79</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -217,13 +248,13 @@
 					<a name="afterrunfile" class="tsd-anchor"></a>
 					<h3>after<wbr>Run<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">after<wbr>Run<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestFile</span>, project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Project</span>, ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestExecutionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">after<wbr>Run<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestFile</span>, project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Project</span>, testExecutionContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestExecutionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/legacy-lifecycle-hooks.class.ts#L95">src/context/legacy-lifecycle-hooks.class.ts:95</a></li>
+									<li>Defined in context/legacy-lifecycle-hooks.class.ts:105</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -235,7 +266,7 @@
 									<h5>project: <span class="tsd-signature-type">Project</span></h5>
 								</li>
 								<li>
-									<h5>ctx: <span class="tsd-signature-type">TestExecutionContext</span></h5>
+									<h5>testExecutionContext: <span class="tsd-signature-type">TestExecutionContext</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -252,7 +283,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/legacy-lifecycle-hooks.class.ts#L45">src/context/legacy-lifecycle-hooks.class.ts:45</a></li>
+									<li>Defined in context/legacy-lifecycle-hooks.class.ts:67</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -272,13 +303,13 @@
 					<a name="beforerunfile" class="tsd-anchor"></a>
 					<h3>before<wbr>Run<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">before<wbr>Run<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestFile</span>, project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Project</span>, ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestExecutionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">before<wbr>Run<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestFile</span>, project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Project</span>, testExecutionContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestExecutionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/legacy-lifecycle-hooks.class.ts#L83">src/context/legacy-lifecycle-hooks.class.ts:83</a></li>
+									<li>Defined in context/legacy-lifecycle-hooks.class.ts:91</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -290,7 +321,7 @@
 									<h5>project: <span class="tsd-signature-type">Project</span></h5>
 								</li>
 								<li>
-									<h5>ctx: <span class="tsd-signature-type">TestExecutionContext</span></h5>
+									<h5>testExecutionContext: <span class="tsd-signature-type">TestExecutionContext</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -301,19 +332,80 @@
 					<a name="onproject" class="tsd-anchor"></a>
 					<h3>on<wbr>Project</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Project<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Project</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Project<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Project</span>, testExecutionContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestExecutionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/legacy-lifecycle-hooks.class.ts#L36">src/context/legacy-lifecycle-hooks.class.ts:36</a></li>
+									<li>Defined in context/legacy-lifecycle-hooks.class.ts:51</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>project: <span class="tsd-signature-type">Project</span></h5>
+								</li>
+								<li>
+									<h5>testExecutionContext: <span class="tsd-signature-type">TestExecutionContext</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onsignal" class="tsd-anchor"></a>
+					<h3>on<wbr>Signal</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Signal<span class="tsd-signature-symbol">(</span>signal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Signals</span>, project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Project</span>, _<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestExecutionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in context/legacy-lifecycle-hooks.class.ts:215</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>signal: <span class="tsd-signature-type">Signals</span></h5>
+								</li>
+								<li>
+									<h5>project: <span class="tsd-signature-type">Project</span></h5>
+								</li>
+								<li>
+									<h5>_: <span class="tsd-signature-type">TestExecutionContext</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onunhandlederror" class="tsd-anchor"></a>
+					<h3>on<wbr>Unhandled<wbr>Error</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Unhandled<wbr>Error<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Project</span>, _<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestExecutionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in context/legacy-lifecycle-hooks.class.ts:206</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>error: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>project: <span class="tsd-signature-type">Project</span></h5>
+								</li>
+								<li>
+									<h5>_: <span class="tsd-signature-type">TestExecutionContext</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -324,25 +416,25 @@
 					<a name="requestcontext" class="tsd-anchor"></a>
 					<h3>request<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">request<wbr>Context<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestExecutionContext</span>, project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Project</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/legacyapi.html" class="tsd-signature-type">LegacyApi</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">request<wbr>Context<span class="tsd-signature-symbol">(</span>testExecutionContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TestExecutionContext</span>, project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Project</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/legacyapi.html" class="tsd-signature-type" data-tsd-kind="Interface">LegacyApi</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/legacy-lifecycle-hooks.class.ts#L108">src/context/legacy-lifecycle-hooks.class.ts:108</a></li>
+									<li>Defined in context/legacy-lifecycle-hooks.class.ts:121</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>ctx: <span class="tsd-signature-type">TestExecutionContext</span></h5>
+									<h5>testExecutionContext: <span class="tsd-signature-type">TestExecutionContext</span></h5>
 								</li>
 								<li>
 									<h5>project: <span class="tsd-signature-type">Project</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/legacyapi.html" class="tsd-signature-type">LegacyApi</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/legacyapi.html" class="tsd-signature-type" data-tsd-kind="Interface">LegacyApi</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -351,13 +443,16 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="key.html" class="tsd-kind-icon">Key</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
@@ -374,6 +469,15 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="legacylifecyclehooks.html#driver" class="tsd-kind-icon">driver</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="legacylifecyclehooks.html#driverloggingadapter" class="tsd-kind-icon">driver<wbr>Logging<wbr>Adapter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="legacylifecyclehooks.html#properties" class="tsd-kind-icon">properties</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="legacylifecyclehooks.html#reusebrowser" class="tsd-kind-icon">reuse<wbr>Browser</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="legacylifecyclehooks.html#uionly" class="tsd-kind-icon">ui<wbr>Only</a>
@@ -394,12 +498,72 @@
 								<a href="legacylifecyclehooks.html#onproject" class="tsd-kind-icon">on<wbr>Project</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="legacylifecyclehooks.html#onsignal" class="tsd-kind-icon">on<wbr>Signal</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="legacylifecyclehooks.html#onunhandlederror" class="tsd-kind-icon">on<wbr>Unhandled<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="legacylifecyclehooks.html#requestcontext" class="tsd-kind-icon">request<wbr>Context</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="legacyloader.html" class="tsd-kind-icon">Legacy<wbr>Loader</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="mousebutton.html" class="tsd-kind-icon">Mouse<wbr>Button</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/application.html" class="tsd-kind-icon">Application</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/commonapi.html" class="tsd-kind-icon">Common<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/environment.html" class="tsd-kind-icon">Environment</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/legacyapi.html" class="tsd-kind-icon">Legacy<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/logger.html" class="tsd-kind-icon">Logger</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/newabletestcase.html" class="tsd-kind-icon">Newable<wbr>Test<wbr>Case</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/newablethenableapplication.html" class="tsd-kind-icon">Newable<wbr>Thenable<wbr>Application</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/newablethenableenvironment.html" class="tsd-kind-icon">Newable<wbr>Thenable<wbr>Environment</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/newablethenableregion.html" class="tsd-kind-icon">Newable<wbr>Thenable<wbr>Region</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/region.html" class="tsd-kind-icon">Region</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/testcase.html" class="tsd-kind-icon">Test<wbr>Case</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/thenableapplication.html" class="tsd-kind-icon">Thenable<wbr>Application</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/thenableenvironment.html" class="tsd-kind-icon">Thenable<wbr>Environment</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/thenableregion.html" class="tsd-kind-icon">Thenable<wbr>Region</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#createtestcaseclass" class="tsd-kind-icon">create<wbr>Test<wbr>Case<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -410,18 +574,14 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
@@ -431,6 +591,5 @@
 </footer>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

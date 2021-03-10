@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for @sakuli/commons">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">@sakuli/commons</a>
 				</li>
 				<li>
 					<a href="cascadingpropertymap.html">CascadingPropertyMap</a>
@@ -75,13 +74,19 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/propertymap.html" class="tsd-signature-type">PropertyMap</a></li>
+					<li><a href="../interfaces/propertymap.html" class="tsd-signature-type" data-tsd-kind="Interface">PropertyMap</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="cascadingpropertymap.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
@@ -94,19 +99,36 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Cascading<wbr>Property<wbr>Map<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cascadingpropertymap.html" class="tsd-signature-type" data-tsd-kind="Class">CascadingPropertyMap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="cascadingpropertymap.html" class="tsd-signature-type" data-tsd-kind="Class">CascadingPropertyMap</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/propertymap.html">PropertyMap</a>.<a href="../interfaces/propertymap.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-commons/src/properties/sources/cascading-property-source.class.ts#L11">src/properties/sources/cascading-property-source.class.ts:11</a></li>
+									<li>Defined in properties/sources/cascading-property-source.class.ts:11</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -115,7 +137,7 @@
 									<h5>key: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -130,7 +152,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/propertymap.html">PropertyMap</a>.<a href="../interfaces/propertymap.html#has">has</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-commons/src/properties/sources/cascading-property-source.class.ts#L19">src/properties/sources/cascading-property-source.class.ts:19</a></li>
+									<li>Defined in properties/sources/cascading-property-source.class.ts:19</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -147,19 +169,19 @@
 					<a name="installsource" class="tsd-anchor"></a>
 					<h3>install<wbr>Source</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">install<wbr>Source<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="../interfaces/propertysource.html" class="tsd-signature-type">PropertySource</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">install<wbr>Source<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="../interfaces/propertysource.html" class="tsd-signature-type" data-tsd-kind="Interface">PropertySource</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-commons/src/properties/sources/cascading-property-source.class.ts#L7">src/properties/sources/cascading-property-source.class.ts:7</a></li>
+									<li>Defined in properties/sources/cascading-property-source.class.ts:7</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>source: <a href="../interfaces/propertysource.html" class="tsd-signature-type">PropertySource</a></h5>
+									<h5>source: <a href="../interfaces/propertysource.html" class="tsd-signature-type" data-tsd-kind="Interface">PropertySource</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -171,8 +193,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
@@ -183,6 +205,9 @@
 					<li class="current tsd-kind-class">
 						<a href="cascadingpropertymap.html" class="tsd-kind-icon">Cascading<wbr>Property<wbr>Map</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="cascadingpropertymap.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="cascadingpropertymap.html#get" class="tsd-kind-icon">get</a>
 							</li>
@@ -221,6 +246,5 @@
 </footer>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

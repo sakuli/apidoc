@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for @sakuli/core">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">@sakuli/core</a>
 				</li>
 				<li>
 					<a href="forwarder.html">Forwarder</a>
@@ -97,13 +96,13 @@
 					<a name="forward" class="tsd-anchor"></a>
 					<h3>forward</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">forward<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="../classes/testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">forward<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="../classes/testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/forwarder/forwarder.interface.ts#L67">src/forwarder/forwarder.interface.ts:67</a></li>
+									<li>Defined in forwarder/forwarder.interface.ts:67</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -116,7 +115,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>ctx: <a href="../classes/testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>ctx: <a href="../classes/testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -127,13 +126,13 @@
 					<a name="forwardactionresult" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> forward<wbr>Action<wbr>Result</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">forward<wbr>Action<wbr>Result<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="../classes/testactioncontext.html" class="tsd-signature-type">TestActionContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type">FinishedMeasurable</a>, ctx<span class="tsd-signature-symbol">: </span><a href="../classes/testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">forward<wbr>Action<wbr>Result<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="../classes/testactioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestActionContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type" data-tsd-kind="Interface">FinishedMeasurable</a>, ctx<span class="tsd-signature-symbol">: </span><a href="../classes/testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/forwarder/forwarder.interface.ts#L55">src/forwarder/forwarder.interface.ts:55</a></li>
+									<li>Defined in forwarder/forwarder.interface.ts:55</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -144,10 +143,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>entity: <a href="../classes/testactioncontext.html" class="tsd-signature-type">TestActionContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type">FinishedMeasurable</a></h5>
+									<h5>entity: <a href="../classes/testactioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestActionContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type" data-tsd-kind="Interface">FinishedMeasurable</a></h5>
 								</li>
 								<li>
-									<h5>ctx: <a href="../classes/testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>ctx: <a href="../classes/testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -158,13 +157,13 @@
 					<a name="forwardcaseresult" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> forward<wbr>Case<wbr>Result</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">forward<wbr>Case<wbr>Result<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="../classes/testcasecontext.html" class="tsd-signature-type">TestCaseContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type">FinishedMeasurable</a>, ctx<span class="tsd-signature-symbol">: </span><a href="../classes/testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">forward<wbr>Case<wbr>Result<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="../classes/testcasecontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestCaseContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type" data-tsd-kind="Interface">FinishedMeasurable</a>, ctx<span class="tsd-signature-symbol">: </span><a href="../classes/testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/forwarder/forwarder.interface.ts#L35">src/forwarder/forwarder.interface.ts:35</a></li>
+									<li>Defined in forwarder/forwarder.interface.ts:35</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -175,10 +174,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>entity: <a href="../classes/testcasecontext.html" class="tsd-signature-type">TestCaseContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type">FinishedMeasurable</a></h5>
+									<h5>entity: <a href="../classes/testcasecontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestCaseContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type" data-tsd-kind="Interface">FinishedMeasurable</a></h5>
 								</li>
 								<li>
-									<h5>ctx: <a href="../classes/testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>ctx: <a href="../classes/testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -189,13 +188,13 @@
 					<a name="forwardstepresult" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> forward<wbr>Step<wbr>Result</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">forward<wbr>Step<wbr>Result<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="../classes/teststepcontext.html" class="tsd-signature-type">TestStepContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type">FinishedMeasurable</a>, ctx<span class="tsd-signature-symbol">: </span><a href="../classes/testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">forward<wbr>Step<wbr>Result<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="../classes/teststepcontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestStepContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type" data-tsd-kind="Interface">FinishedMeasurable</a>, ctx<span class="tsd-signature-symbol">: </span><a href="../classes/testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/forwarder/forwarder.interface.ts#L45">src/forwarder/forwarder.interface.ts:45</a></li>
+									<li>Defined in forwarder/forwarder.interface.ts:45</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -206,10 +205,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>entity: <a href="../classes/teststepcontext.html" class="tsd-signature-type">TestStepContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type">FinishedMeasurable</a></h5>
+									<h5>entity: <a href="../classes/teststepcontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestStepContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type" data-tsd-kind="Interface">FinishedMeasurable</a></h5>
 								</li>
 								<li>
-									<h5>ctx: <a href="../classes/testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>ctx: <a href="../classes/testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -220,13 +219,13 @@
 					<a name="forwardsuiteresult" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> forward<wbr>Suite<wbr>Result</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">forward<wbr>Suite<wbr>Result<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="../classes/testsuitecontext.html" class="tsd-signature-type">TestSuiteContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type">FinishedMeasurable</a>, ctx<span class="tsd-signature-symbol">: </span><a href="../classes/testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">forward<wbr>Suite<wbr>Result<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="../classes/testsuitecontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestSuiteContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type" data-tsd-kind="Interface">FinishedMeasurable</a>, ctx<span class="tsd-signature-symbol">: </span><a href="../classes/testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/forwarder/forwarder.interface.ts#L25">src/forwarder/forwarder.interface.ts:25</a></li>
+									<li>Defined in forwarder/forwarder.interface.ts:25</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -237,10 +236,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>entity: <a href="../classes/testsuitecontext.html" class="tsd-signature-type">TestSuiteContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type">FinishedMeasurable</a></h5>
+									<h5>entity: <a href="../classes/testsuitecontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestSuiteContext</a><span class="tsd-signature-symbol"> &amp; </span><a href="finishedmeasurable.html" class="tsd-signature-type" data-tsd-kind="Interface">FinishedMeasurable</a></h5>
 								</li>
 								<li>
-									<h5>ctx: <a href="../classes/testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>ctx: <a href="../classes/testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -251,13 +250,13 @@
 					<a name="setup" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> setup</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">setup<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="../classes/project.html" class="tsd-signature-type">Project</a>, logger<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SimpleLogger</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">setup<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="../classes/project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a>, logger<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SimpleLogger</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/forwarder/forwarder.interface.ts#L18">src/forwarder/forwarder.interface.ts:18</a></li>
+									<li>Defined in forwarder/forwarder.interface.ts:18</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -268,7 +267,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>project: <a href="../classes/project.html" class="tsd-signature-type">Project</a></h5>
+									<h5>project: <a href="../classes/project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a></h5>
 								</li>
 								<li>
 									<h5>logger: <span class="tsd-signature-type">SimpleLogger</span></h5>
@@ -290,7 +289,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/forwarder/forwarder.interface.ts#L72">src/forwarder/forwarder.interface.ts:72</a></li>
+									<li>Defined in forwarder/forwarder.interface.ts:72</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -307,8 +306,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
@@ -359,12 +358,13 @@
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
@@ -374,6 +374,5 @@
 </footer>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

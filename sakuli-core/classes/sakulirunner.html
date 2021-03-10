@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for @sakuli/core">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">@sakuli/core</a>
 				</li>
 				<li>
 					<a href="sakulirunner.html">SakuliRunner</a>
@@ -75,7 +74,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/testexecutionlifecyclehooks.html" class="tsd-signature-type">TestExecutionLifecycleHooks</a></li>
+					<li><a href="../interfaces/testexecutionlifecyclehooks.html" class="tsd-signature-type" data-tsd-kind="Interface">TestExecutionLifecycleHooks</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -118,28 +117,28 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Sakuli<wbr>Runner<span class="tsd-signature-symbol">(</span>lifecycleHooks<span class="tsd-signature-symbol">: </span><a href="../interfaces/testexecutionlifecyclehooks.html" class="tsd-signature-type">TestExecutionLifecycleHooks</a><span class="tsd-signature-symbol">[]</span>, testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a>, testFileExecutor<span class="tsd-signature-symbol">?: </span><a href="../interfaces/testscriptexecutor.html" class="tsd-signature-type">TestScriptExecutor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sakulirunner.html" class="tsd-signature-type">SakuliRunner</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Sakuli<wbr>Runner<span class="tsd-signature-symbol">(</span>lifecycleHooks<span class="tsd-signature-symbol">: </span><a href="../interfaces/testexecutionlifecyclehooks.html" class="tsd-signature-type" data-tsd-kind="Interface">TestExecutionLifecycleHooks</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span>, testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a>, testFileExecutor<span class="tsd-signature-symbol">?: </span><a href="../interfaces/testscriptexecutor.html" class="tsd-signature-type" data-tsd-kind="Interface">TestScriptExecutor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sakulirunner.html" class="tsd-signature-type" data-tsd-kind="Class">SakuliRunner</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L10">src/runner/sakuli-runner.class.ts:10</a></li>
+									<li>Defined in runner/sakuli-runner.class.ts:16</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>lifecycleHooks: <a href="../interfaces/testexecutionlifecyclehooks.html" class="tsd-signature-type">TestExecutionLifecycleHooks</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>lifecycleHooks: <a href="../interfaces/testexecutionlifecyclehooks.html" class="tsd-signature-type" data-tsd-kind="Interface">TestExecutionLifecycleHooks</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> testFileExecutor: <a href="../interfaces/testscriptexecutor.html" class="tsd-signature-type">TestScriptExecutor</a><span class="tsd-signature-symbol"> = new JsScriptExecutor()</span></h5>
+									<h5>testFileExecutor: <a href="../interfaces/testscriptexecutor.html" class="tsd-signature-type" data-tsd-kind="Interface">TestScriptExecutor</a><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="sakulirunner.html" class="tsd-signature-type">SakuliRunner</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="sakulirunner.html" class="tsd-signature-type" data-tsd-kind="Class">SakuliRunner</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -148,32 +147,23 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="lifecyclehooks" class="tsd-anchor"></a>
-					<h3>lifecycle<wbr>Hooks</h3>
-					<div class="tsd-signature tsd-kind-icon">lifecycle<wbr>Hooks<span class="tsd-signature-symbol">:</span> <a href="../interfaces/testexecutionlifecyclehooks.html" class="tsd-signature-type">TestExecutionLifecycleHooks</a><span class="tsd-signature-symbol">[]</span></div>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> lifecycle<wbr>Hooks</h3>
+					<div class="tsd-signature tsd-kind-icon">lifecycle<wbr>Hooks<span class="tsd-signature-symbol">:</span> <a href="../interfaces/testexecutionlifecyclehooks.html" class="tsd-signature-type" data-tsd-kind="Interface">TestExecutionLifecycleHooks</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L12">src/runner/sakuli-runner.class.ts:12</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="testexecutioncontext" class="tsd-anchor"></a>
-					<h3>test<wbr>Execution<wbr>Context</h3>
-					<div class="tsd-signature tsd-kind-icon">test<wbr>Execution<wbr>Context<span class="tsd-signature-symbol">:</span> <a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></div>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> test<wbr>Execution<wbr>Context</h3>
+					<div class="tsd-signature tsd-kind-icon">test<wbr>Execution<wbr>Context<span class="tsd-signature-symbol">:</span> <a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L13">src/runner/sakuli-runner.class.ts:13</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="testfileexecutor" class="tsd-anchor"></a>
-					<h3>test<wbr>File<wbr>Executor</h3>
-					<div class="tsd-signature tsd-kind-icon">test<wbr>File<wbr>Executor<span class="tsd-signature-symbol">:</span> <a href="../interfaces/testscriptexecutor.html" class="tsd-signature-type">TestScriptExecutor</a></div>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> test<wbr>File<wbr>Executor</h3>
+					<div class="tsd-signature tsd-kind-icon">test<wbr>File<wbr>Executor<span class="tsd-signature-symbol">:</span> <a href="../interfaces/testscriptexecutor.html" class="tsd-signature-type" data-tsd-kind="Interface">TestScriptExecutor</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L14">src/runner/sakuli-runner.class.ts:14</a></li>
-						</ul>
 					</aside>
 				</section>
 			</section>
@@ -183,23 +173,23 @@
 					<a name="afterexecution" class="tsd-anchor"></a>
 					<h3>after<wbr>Execution</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">after<wbr>Execution<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type">Project</a>, testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">after<wbr>Execution<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a>, testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/testexecutionlifecyclehooks.html">TestExecutionLifecycleHooks</a>.<a href="../interfaces/testexecutionlifecyclehooks.html#afterexecution">afterExecution</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L103">src/runner/sakuli-runner.class.ts:103</a></li>
+									<li>Defined in runner/sakuli-runner.class.ts:95</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>project: <a href="project.html" class="tsd-signature-type">Project</a></h5>
+									<h5>project: <a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a></h5>
 								</li>
 								<li>
-									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -210,26 +200,26 @@
 					<a name="afterrunfile" class="tsd-anchor"></a>
 					<h3>after<wbr>Run<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">after<wbr>Run<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="../interfaces/testfile.html" class="tsd-signature-type">TestFile</a>, project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type">Project</a>, testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">after<wbr>Run<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="../interfaces/testfile.html" class="tsd-signature-type" data-tsd-kind="Interface">TestFile</a>, project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a>, testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/testexecutionlifecyclehooks.html">TestExecutionLifecycleHooks</a>.<a href="../interfaces/testexecutionlifecyclehooks.html#afterrunfile">afterRunFile</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L120">src/runner/sakuli-runner.class.ts:120</a></li>
+									<li>Defined in runner/sakuli-runner.class.ts:112</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>file: <a href="../interfaces/testfile.html" class="tsd-signature-type">TestFile</a></h5>
+									<h5>file: <a href="../interfaces/testfile.html" class="tsd-signature-type" data-tsd-kind="Interface">TestFile</a></h5>
 								</li>
 								<li>
-									<h5>project: <a href="project.html" class="tsd-signature-type">Project</a></h5>
+									<h5>project: <a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a></h5>
 								</li>
 								<li>
-									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -240,23 +230,23 @@
 					<a name="beforeexecution" class="tsd-anchor"></a>
 					<h3>before<wbr>Execution</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">before<wbr>Execution<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type">Project</a>, testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">before<wbr>Execution<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a>, testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/testexecutionlifecyclehooks.html">TestExecutionLifecycleHooks</a>.<a href="../interfaces/testexecutionlifecyclehooks.html#beforeexecution">beforeExecution</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L92">src/runner/sakuli-runner.class.ts:92</a></li>
+									<li>Defined in runner/sakuli-runner.class.ts:84</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>project: <a href="project.html" class="tsd-signature-type">Project</a></h5>
+									<h5>project: <a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a></h5>
 								</li>
 								<li>
-									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -267,26 +257,26 @@
 					<a name="beforerunfile" class="tsd-anchor"></a>
 					<h3>before<wbr>Run<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">before<wbr>Run<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="../interfaces/testfile.html" class="tsd-signature-type">TestFile</a>, project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type">Project</a>, testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">before<wbr>Run<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="../interfaces/testfile.html" class="tsd-signature-type" data-tsd-kind="Interface">TestFile</a>, project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a>, testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/testexecutionlifecyclehooks.html">TestExecutionLifecycleHooks</a>.<a href="../interfaces/testexecutionlifecyclehooks.html#beforerunfile">beforeRunFile</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L132">src/runner/sakuli-runner.class.ts:132</a></li>
+									<li>Defined in runner/sakuli-runner.class.ts:124</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>file: <a href="../interfaces/testfile.html" class="tsd-signature-type">TestFile</a></h5>
+									<h5>file: <a href="../interfaces/testfile.html" class="tsd-signature-type" data-tsd-kind="Interface">TestFile</a></h5>
 								</li>
 								<li>
-									<h5>project: <a href="project.html" class="tsd-signature-type">Project</a></h5>
+									<h5>project: <a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a></h5>
 								</li>
 								<li>
-									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -297,13 +287,13 @@
 					<a name="execute" class="tsd-anchor"></a>
 					<h3>execute</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">execute<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type">Project</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">execute<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L24">src/runner/sakuli-runner.class.ts:24</a></li>
+									<li>Defined in runner/sakuli-runner.class.ts:33</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -315,7 +305,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>project: <a href="project.html" class="tsd-signature-type">Project</a></h5>
+									<h5>project: <a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The Project Structure found by a Project loader</p>
 									</div>
@@ -330,23 +320,23 @@
 					<a name="onproject" class="tsd-anchor"></a>
 					<h3>on<wbr>Project</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Project<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type">Project</a>, tec<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Project<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a>, tec<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/testexecutionlifecyclehooks.html">TestExecutionLifecycleHooks</a>.<a href="../interfaces/testexecutionlifecyclehooks.html#onproject">onProject</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L84">src/runner/sakuli-runner.class.ts:84</a></li>
+									<li>Defined in runner/sakuli-runner.class.ts:76</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>project: <a href="project.html" class="tsd-signature-type">Project</a></h5>
+									<h5>project: <a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a></h5>
 								</li>
 								<li>
-									<h5>tec: <a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>tec: <a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -357,26 +347,26 @@
 					<a name="readfilecontent" class="tsd-anchor"></a>
 					<h3>read<wbr>File<wbr>Content</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>File<wbr>Content<span class="tsd-signature-symbol">(</span>testFile<span class="tsd-signature-symbol">: </span><a href="../interfaces/testfile.html" class="tsd-signature-type">TestFile</a>, project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type">Project</a>, context<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>File<wbr>Content<span class="tsd-signature-symbol">(</span>testFile<span class="tsd-signature-symbol">: </span><a href="../interfaces/testfile.html" class="tsd-signature-type" data-tsd-kind="Interface">TestFile</a>, project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a>, context<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/testexecutionlifecyclehooks.html">TestExecutionLifecycleHooks</a>.<a href="../interfaces/testexecutionlifecyclehooks.html#readfilecontent">readFileContent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L158">src/runner/sakuli-runner.class.ts:158</a></li>
+									<li>Defined in runner/sakuli-runner.class.ts:150</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>testFile: <a href="../interfaces/testfile.html" class="tsd-signature-type">TestFile</a></h5>
+									<h5>testFile: <a href="../interfaces/testfile.html" class="tsd-signature-type" data-tsd-kind="Interface">TestFile</a></h5>
 								</li>
 								<li>
-									<h5>project: <a href="project.html" class="tsd-signature-type">Project</a></h5>
+									<h5>project: <a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a></h5>
 								</li>
 								<li>
-									<h5>context: <a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>context: <a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -387,23 +377,23 @@
 					<a name="requestcontext" class="tsd-anchor"></a>
 					<h3>request<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">request<wbr>Context<span class="tsd-signature-symbol">(</span>testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a>, project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type">Project</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">request<wbr>Context<span class="tsd-signature-symbol">(</span>testExecutionContext<span class="tsd-signature-symbol">: </span><a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a>, project<span class="tsd-signature-symbol">: </span><a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/testexecutionlifecyclehooks.html">TestExecutionLifecycleHooks</a>.<a href="../interfaces/testexecutionlifecyclehooks.html#requestcontext">requestContext</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-core/src/runner/sakuli-runner.class.ts#L144">src/runner/sakuli-runner.class.ts:144</a></li>
+									<li>Defined in runner/sakuli-runner.class.ts:136</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type">TestExecutionContext</a></h5>
+									<h5>testExecutionContext: <a href="testexecutioncontext.html" class="tsd-signature-type" data-tsd-kind="Class">TestExecutionContext</a></h5>
 								</li>
 								<li>
-									<h5>project: <a href="project.html" class="tsd-signature-type">Project</a></h5>
+									<h5>project: <a href="project.html" class="tsd-signature-type" data-tsd-kind="Class">Project</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -415,8 +405,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
@@ -482,12 +472,13 @@
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
@@ -497,6 +488,5 @@
 </footer>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

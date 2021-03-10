@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for @sakuli/legacy">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">@sakuli/legacy</a>
 				</li>
 				<li>
 					<a href="thenableenvironment.html">ThenableEnvironment</a>
@@ -68,7 +67,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="environment.html" class="tsd-signature-type">Environment</a><span class="tsd-signature-symbol">&gt;</span>
+						<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="environment.html" class="tsd-signature-type" data-tsd-kind="Interface">Environment</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ThenableEnvironment</span>
@@ -122,7 +121,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="thenableenvironment.html#sleepms" class="tsd-kind-icon">sleep<wbr>Ms</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="thenableenvironment.html#takescreenshot" class="tsd-kind-icon">take<wbr>Screenshot</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="thenableenvironment.html#takescreenshotwithtimestamp" class="tsd-kind-icon">take<wbr>Screenshot<wbr>With<wbr>Timestamp</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="thenableenvironment.html#then" class="tsd-kind-icon">then</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="thenableenvironment.html#type" class="tsd-kind-icon">type</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="thenableenvironment.html#typeanddecrypt" class="tsd-kind-icon">type<wbr>And<wbr>Decrypt</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="thenableenvironment.html#typemasked" class="tsd-kind-icon">type<wbr>Masked</a></li>
@@ -136,11 +134,11 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="env" class="tsd-anchor"></a>
-					<h3>env</h3>
-					<div class="tsd-signature tsd-kind-icon">env<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="environment.html" class="tsd-signature-type">Environment</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> env</h3>
+					<div class="tsd-signature tsd-kind-icon">env<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="environment.html" class="tsd-signature-type" data-tsd-kind="Interface">Environment</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L11">src/context/common/environment/thenable-environment.interface.ts:11</a></li>
+							<li>Defined in context/common/environment/thenable-environment.interface.ts:11</li>
 						</ul>
 					</aside>
 				</section>
@@ -157,7 +155,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L13">src/context/common/environment/thenable-environment.interface.ts:13</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:13</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -168,16 +166,16 @@
 					<a name="copyintoclipboard" class="tsd-anchor"></a>
 					<h3>copy<wbr>Into<wbr>Clipboard</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">copy<wbr>Into<wbr>Clipboard<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">copy<wbr>Into<wbr>Clipboard<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L15">src/context/common/environment/thenable-environment.interface.ts:15</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:15</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -191,7 +189,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L17">src/context/common/environment/thenable-environment.interface.ts:17</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:17</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -214,7 +212,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L19">src/context/common/environment/thenable-environment.interface.ts:19</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:19</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -231,7 +229,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L21">src/context/common/environment/thenable-environment.interface.ts:21</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:21</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -242,13 +240,13 @@
 					<a name="getenv" class="tsd-anchor"></a>
 					<h3>get<wbr>Env</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Env<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Env<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L23">src/context/common/environment/thenable-environment.interface.ts:23</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:23</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -257,7 +255,7 @@
 									<h5>key: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -265,13 +263,13 @@
 					<a name="getenvmasked" class="tsd-anchor"></a>
 					<h3>get<wbr>Env<wbr>Masked</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Env<wbr>Masked<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Env<wbr>Masked<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L25">src/context/common/environment/thenable-environment.interface.ts:25</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:25</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -280,7 +278,7 @@
 									<h5>key: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -294,7 +292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L27">src/context/common/environment/thenable-environment.interface.ts:27</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:27</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -305,13 +303,13 @@
 					<a name="getproperty" class="tsd-anchor"></a>
 					<h3>get<wbr>Property</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Property<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Property<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L29">src/context/common/environment/thenable-environment.interface.ts:29</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:29</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -320,7 +318,7 @@
 									<h5>key: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -328,13 +326,13 @@
 					<a name="getpropertymasked" class="tsd-anchor"></a>
 					<h3>get<wbr>Property<wbr>Masked</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Property<wbr>Masked<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Property<wbr>Masked<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L31">src/context/common/environment/thenable-environment.interface.ts:31</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:31</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -343,7 +341,7 @@
 									<h5>key: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -351,16 +349,16 @@
 					<a name="getregionfromfocusedwindow" class="tsd-anchor"></a>
 					<h3>get<wbr>Region<wbr>From<wbr>Focused<wbr>Window</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Region<wbr>From<wbr>Focused<wbr>Window<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableregion.html" class="tsd-signature-type">ThenableRegion</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Region<wbr>From<wbr>Focused<wbr>Window<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableregion.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableRegion</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L33">src/context/common/environment/thenable-environment.interface.ts:33</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:33</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="thenableregion.html" class="tsd-signature-type">ThenableRegion</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableregion.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableRegion</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -374,7 +372,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L35">src/context/common/environment/thenable-environment.interface.ts:35</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:35</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -391,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L37">src/context/common/environment/thenable-environment.interface.ts:37</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:37</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -408,7 +406,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L39">src/context/common/environment/thenable-environment.interface.ts:39</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:39</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -425,7 +423,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L41">src/context/common/environment/thenable-environment.interface.ts:41</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:41</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -436,22 +434,22 @@
 					<a name="keydown" class="tsd-anchor"></a>
 					<h3>key<wbr>Down</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">key<wbr>Down<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>keys<span class="tsd-signature-symbol">: </span><a href="../classes/key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">key<wbr>Down<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>keys<span class="tsd-signature-symbol">: </span><a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L43">src/context/common/environment/thenable-environment.interface.ts:43</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:43</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>keys: <a href="../classes/key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>keys: <a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -459,22 +457,22 @@
 					<a name="keyup" class="tsd-anchor"></a>
 					<h3>key<wbr>Up</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">key<wbr>Up<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>keys<span class="tsd-signature-symbol">: </span><a href="../classes/key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">key<wbr>Up<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>keys<span class="tsd-signature-symbol">: </span><a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L45">src/context/common/environment/thenable-environment.interface.ts:45</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:45</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>keys: <a href="../classes/key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>keys: <a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -482,13 +480,13 @@
 					<a name="mousewheeldown" class="tsd-anchor"></a>
 					<h3>mouse<wbr>Wheel<wbr>Down</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">mouse<wbr>Wheel<wbr>Down<span class="tsd-signature-symbol">(</span>steps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">mouse<wbr>Wheel<wbr>Down<span class="tsd-signature-symbol">(</span>steps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L47">src/context/common/environment/thenable-environment.interface.ts:47</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:47</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -497,7 +495,7 @@
 									<h5>steps: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -505,13 +503,13 @@
 					<a name="mousewheelup" class="tsd-anchor"></a>
 					<h3>mouse<wbr>Wheel<wbr>Up</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">mouse<wbr>Wheel<wbr>Up<span class="tsd-signature-symbol">(</span>steps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">mouse<wbr>Wheel<wbr>Up<span class="tsd-signature-symbol">(</span>steps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L49">src/context/common/environment/thenable-environment.interface.ts:49</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:49</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -520,7 +518,7 @@
 									<h5>steps: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -528,13 +526,13 @@
 					<a name="paste" class="tsd-anchor"></a>
 					<h3>paste</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">paste<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">paste<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L51">src/context/common/environment/thenable-environment.interface.ts:51</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:51</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -543,7 +541,7 @@
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -551,13 +549,13 @@
 					<a name="pasteanddecrypt" class="tsd-anchor"></a>
 					<h3>paste<wbr>And<wbr>Decrypt</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">paste<wbr>And<wbr>Decrypt<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">paste<wbr>And<wbr>Decrypt<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L53">src/context/common/environment/thenable-environment.interface.ts:53</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:53</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -566,7 +564,7 @@
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -574,16 +572,16 @@
 					<a name="pasteclipboard" class="tsd-anchor"></a>
 					<h3>paste<wbr>Clipboard</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">paste<wbr>Clipboard<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">paste<wbr>Clipboard<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L55">src/context/common/environment/thenable-environment.interface.ts:55</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:55</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -591,13 +589,13 @@
 					<a name="pastemasked" class="tsd-anchor"></a>
 					<h3>paste<wbr>Masked</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">paste<wbr>Masked<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">paste<wbr>Masked<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L57">src/context/common/environment/thenable-environment.interface.ts:57</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:57</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -606,7 +604,7 @@
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -620,7 +618,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L59">src/context/common/environment/thenable-environment.interface.ts:59</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:59</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -631,13 +629,13 @@
 					<a name="runcommand" class="tsd-anchor"></a>
 					<h3>run<wbr>Command</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, optThrowException<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/commandlineresult.html" class="tsd-signature-type">CommandLineResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, optThrowException<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CommandLineResult</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L61">src/context/common/environment/thenable-environment.interface.ts:61</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:61</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -649,7 +647,7 @@
 									<h5>optThrowException: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/commandlineresult.html" class="tsd-signature-type">CommandLineResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CommandLineResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -657,13 +655,13 @@
 					<a name="setclipboard" class="tsd-anchor"></a>
 					<h3>set<wbr>Clipboard</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Clipboard<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Clipboard<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L66">src/context/common/environment/thenable-environment.interface.ts:66</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:66</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -672,7 +670,7 @@
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -680,13 +678,13 @@
 					<a name="setclipboardmasked" class="tsd-anchor"></a>
 					<h3>set<wbr>Clipboard<wbr>Masked</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Clipboard<wbr>Masked<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Clipboard<wbr>Masked<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L68">src/context/common/environment/thenable-environment.interface.ts:68</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:68</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -695,7 +693,7 @@
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -709,7 +707,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L70">src/context/common/environment/thenable-environment.interface.ts:70</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:70</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -726,13 +724,13 @@
 					<a name="sleep" class="tsd-anchor"></a>
 					<h3>sleep</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">sleep<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">sleep<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L72">src/context/common/environment/thenable-environment.interface.ts:72</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:72</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -741,7 +739,7 @@
 									<h5>s: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -749,13 +747,13 @@
 					<a name="sleepms" class="tsd-anchor"></a>
 					<h3>sleep<wbr>Ms</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">sleep<wbr>Ms<span class="tsd-signature-symbol">(</span>ms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">sleep<wbr>Ms<span class="tsd-signature-symbol">(</span>ms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L74">src/context/common/environment/thenable-environment.interface.ts:74</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:74</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -764,7 +762,7 @@
 									<h5>ms: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -778,7 +776,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L76">src/context/common/environment/thenable-environment.interface.ts:76</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:76</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -801,7 +799,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L78">src/context/common/environment/thenable-environment.interface.ts:78</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:78</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -814,77 +812,29 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-					<a name="then" class="tsd-anchor"></a>
-					<h3>then</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">then&lt;TResult1, TResult2&gt;<span class="tsd-signature-symbol">(</span>onfulfilled<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="environment.html" class="tsd-signature-type">Environment</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TResult1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult1</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, onrejected<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>reason<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TResult2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TResult2</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="thenableregion.html">ThenableRegion</a>.<a href="thenableregion.html#then">then</a></p>
-								<ul>
-									<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:1410</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Attaches callbacks for the resolution and/or rejection of the Promise.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>TResult1</h4>
-								</li>
-								<li>
-									<h4>TResult2</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> onfulfilled: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="environment.html" class="tsd-signature-type">Environment</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TResult1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult1</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The callback to execute when the Promise is resolved.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> onrejected: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>reason<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TResult2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult2</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The callback to execute when the Promise is rejected.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TResult2</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A Promise for the completion of which ever callback is executed.</p>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/key.html" class="tsd-signature-type">Key</a>, <span class="tsd-signature-symbol">...</span>optModifiers<span class="tsd-signature-symbol">: </span><a href="../classes/key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a>, <span class="tsd-signature-symbol">...</span>optModifiers<span class="tsd-signature-symbol">: </span><a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L80">src/context/common/environment/thenable-environment.interface.ts:80</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:80</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>text: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/key.html" class="tsd-signature-type">Key</a></h5>
+									<h5>text: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>optModifiers: <a href="../classes/key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>optModifiers: <a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -892,13 +842,13 @@
 					<a name="typeanddecrypt" class="tsd-anchor"></a>
 					<h3>type<wbr>And<wbr>Decrypt</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">type<wbr>And<wbr>Decrypt<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>optModifiers<span class="tsd-signature-symbol">: </span><a href="../classes/key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">type<wbr>And<wbr>Decrypt<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>optModifiers<span class="tsd-signature-symbol">: </span><a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L82">src/context/common/environment/thenable-environment.interface.ts:82</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:82</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -907,10 +857,10 @@
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>optModifiers: <a href="../classes/key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>optModifiers: <a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -918,25 +868,25 @@
 					<a name="typemasked" class="tsd-anchor"></a>
 					<h3>type<wbr>Masked</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">type<wbr>Masked<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/key.html" class="tsd-signature-type">Key</a>, <span class="tsd-signature-symbol">...</span>optModifiers<span class="tsd-signature-symbol">: </span><a href="../classes/key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">type<wbr>Masked<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a>, <span class="tsd-signature-symbol">...</span>optModifiers<span class="tsd-signature-symbol">: </span><a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L84">src/context/common/environment/thenable-environment.interface.ts:84</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:84</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>text: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/key.html" class="tsd-signature-type">Key</a></h5>
+									<h5>text: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>optModifiers: <a href="../classes/key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>optModifiers: <a href="../classes/key.html" class="tsd-signature-type" data-tsd-kind="Class">Key</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -944,13 +894,13 @@
 					<a name="write" class="tsd-anchor"></a>
 					<h3>write</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></li>
+						<li class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sakuli/sakuli/blob/fdb3a6d/packages/sakuli-legacy/src/context/common/environment/thenable-environment.interface.ts#L86">src/context/common/environment/thenable-environment.interface.ts:86</a></li>
+									<li>Defined in context/common/environment/thenable-environment.interface.ts:86</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -959,7 +909,7 @@
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type">ThenableEnvironment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="thenableenvironment.html" class="tsd-signature-type" data-tsd-kind="Interface">ThenableEnvironment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -968,13 +918,61 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="../classes/key.html" class="tsd-kind-icon">Key</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/legacylifecyclehooks.html" class="tsd-kind-icon">Legacy<wbr>Lifecycle<wbr>Hooks</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/legacyloader.html" class="tsd-kind-icon">Legacy<wbr>Loader</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/mousebutton.html" class="tsd-kind-icon">Mouse<wbr>Button</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="application.html" class="tsd-kind-icon">Application</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="commonapi.html" class="tsd-kind-icon">Common<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="environment.html" class="tsd-kind-icon">Environment</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="legacyapi.html" class="tsd-kind-icon">Legacy<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="logger.html" class="tsd-kind-icon">Logger</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="newabletestcase.html" class="tsd-kind-icon">Newable<wbr>Test<wbr>Case</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="newablethenableapplication.html" class="tsd-kind-icon">Newable<wbr>Thenable<wbr>Application</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="newablethenableenvironment.html" class="tsd-kind-icon">Newable<wbr>Thenable<wbr>Environment</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="newablethenableregion.html" class="tsd-kind-icon">Newable<wbr>Thenable<wbr>Region</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="region.html" class="tsd-kind-icon">Region</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="testcase.html" class="tsd-kind-icon">Test<wbr>Case</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="thenableapplication.html" class="tsd-kind-icon">Thenable<wbr>Application</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
@@ -1079,9 +1077,6 @@
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="thenableenvironment.html#takescreenshotwithtimestamp" class="tsd-kind-icon">take<wbr>Screenshot<wbr>With<wbr>Timestamp</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-								<a href="thenableenvironment.html#then" class="tsd-kind-icon">then</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="thenableenvironment.html#type" class="tsd-kind-icon">type</a>
 							</li>
@@ -1098,6 +1093,15 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="thenableregion.html" class="tsd-kind-icon">Thenable<wbr>Region</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#createtestcaseclass" class="tsd-kind-icon">create<wbr>Test<wbr>Case<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -1108,18 +1112,14 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
@@ -1129,6 +1129,5 @@
 </footer>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>
