@@ -1,89 +1,99 @@
-<!doctype html>
-<html class="default no-js">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@sakuli/cli</title>
-	<meta name="description" content="Documentation for @sakuli/cli">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<script async src="assets/js/search.js" id="search-script"></script>
-</head>
-<body>
-<header>
-	<div class="tsd-page-toolbar">
-		<div class="container">
-			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="index.html" class="title">@sakuli/cli</a>
-				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-						</div>
-					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tsd-page-title">
-		<div class="container">
-			<h1>@sakuli/cli</h1>
-		</div>
-	</div>
-</header>
-<div class="container container-main">
-	<div class="row">
-		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#sakuli-cli" id="sakuli-cli" style="color: inherit; text-decoration: none;">
-					<h1>sakuli-cli</h1>
-				</a>
-			</div>
-		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class=" ">
-						<a href="modules.html">Exports</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation secondary menu-sticky">
-				<ul class="before-current">
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
-<footer>
-	<div class="container">
-		<h2>Legend</h2>
-		<div class="tsd-legend-group">
-		</div>
-	</div>
-</footer>
-<div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@sakuli/cli</title><meta name="description" content="Documentation for @sakuli/cli"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">@sakuli/cli</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1> @sakuli/cli</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#sakuli2" id="sakuli2" style="color: inherit; text-decoration: none;">
+  <h1>Sakuli2</h1>
+</a>
+<p><a href="https://github.com/sakuli/sakuli/actions?query=workflow:%22Continuous+Delivery%22"><img src="https://github.com/sakuli/sakuli/workflows/Continuous%20Delivery/badge.svg" alt="Build Status"></a>
+<a href="https://sonarcloud.io/dashboard?id=sakuli%3Asakuli"><img src="https://sonarcloud.io/api/project_badges/measure?project=sakuli%3Asakuli&metric=alert_status" alt="Quality Gate Status"></a>
+<a href="https://sonarcloud.io/dashboard?id=sakuli%3Asakuli"><img src="https://sonarcloud.io/api/project_badges/measure?project=sakuli%3Asakuli&metric=coverage" alt="Coverage"></a></p>
+
+<a href="#why-sakuli-2" id="why-sakuli-2" style="color: inherit; text-decoration: none;">
+  <h2>Why Sakuli 2?</h2>
+</a>
+<p>In the past, we encountered a lot of issues with the architecture of Sakuli. But first and foremost the inactive
+development of Sahi and its deep integration into Sakuli was one of the main reasons to rethink our technology stack.</p>
+<p>So we decide to create a brand-new platform which allows users to test and monitor their systems and developers to extend
+the platform to their own needs.</p>
+
+<a href="#what-is-the-new-stack-of-sakuli2" id="what-is-the-new-stack-of-sakuli2" style="color: inherit; text-decoration: none;">
+  <h2>What is the new Stack of Sakuli2?</h2>
+</a>
+<p>We started to make a complete core code rewrite based on NodeJs and Typescript.</p>
+<ul>
+<li><strong>Node.js</strong> because we wanted the same language for our platform and testcases (Sakuli was written in Java while testcases where executed in a modified version of RhinoJs-Engine)</li>
+<li><strong>Typescript</strong> to provide clear interfaces for third-party devs.</li>
+</ul>
+<p>We also replaced the engines for web- and native checks:</p>
+<ul>
+<li><strong>Sahi</strong> is replaced by Webdriver / Selenium</li>
+<li><strong>Sikuli</strong> is replaced by <a href="https://github.com/nut-tree/nut.js">nut.js</a></li>
+</ul>
+<p>while we try our best to keep the sakuli api backwards compatible.</p>
+
+<a href="#what-can-i-expect-from-sakuli2" id="what-can-i-expect-from-sakuli2" style="color: inherit; text-decoration: none;">
+  <h2>What can I expect from Sakuli2...</h2>
+</a>
+
+<a href="#as-a-user--tester" id="as-a-user--tester" style="color: inherit; text-decoration: none;">
+  <h3>...as a user / tester</h3>
+</a>
+<p>Expect the full power of Sakuli, which means testing and monitoring systems either in web or native.</p>
+
+<a href="#as-a-developer" id="as-a-developer" style="color: inherit; text-decoration: none;">
+  <h3>...as a developer</h3>
+</a>
+<p>Use the full power of typescript, nodejs and their corresponding ecosystems.</p>
+
+<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+  <h1>Installation</h1>
+</a>
+<p>Please refer to the <a href="https://sakuli.io">Sakuli website</a> and the <a href="https://sakuli.io/docs/getting-started/">Getting Started</a> guide for installation instructions.</p>
+
+<a href="#development" id="development" style="color: inherit; text-decoration: none;">
+  <h1>Development</h1>
+</a>
+
+<a href="#workstation" id="workstation" style="color: inherit; text-decoration: none;">
+  <h2>Workstation</h2>
+</a>
+<p>To start developing Sakuli 2 some setup on your workstation is required.</p>
+<ul>
+<li>Make sure to have the active LTS version (v12) of node installed.</li>
+<li>Make sure to have docker installed and started</li>
+<li>Make sure to execute <code>docker pull selenium/standalone-chrome-debug</code> before you start developing.</li>
+</ul>
+
+<a href="#building-the-project" id="building-the-project" style="color: inherit; text-decoration: none;">
+  <h2>Building the Project</h2>
+</a>
+<p>In some situations, it is necessary to build/rebuild the sources (e.g. after changing branches) to create a consistent
+state in the project.</p>
+<p>To do so, please use <code>npm run rebuild</code></p>
+
+<a href="#executing-the-current-state-of-sakuli" id="executing-the-current-state-of-sakuli" style="color: inherit; text-decoration: none;">
+  <h2>Executing the current state of Sakuli</h2>
+</a>
+<p>During development, you might want to test the overall behavior of Sakuli from a developers&#39; perspective. Therefore, we
+created a <code>packages/integration-tests</code> module containing a Sakuli project using Sakuli at the current state of the
+repository.</p>
+<p>Build and execute Sakuli as it is in the current state of the repository:</p>
+<pre><code class="language-shell"><span class="hl-0">npm run rebuild</span><br/><span class="hl-1">cd</span><span class="hl-0"> packages/integration-tests</span><br/><span class="hl-0">npx sakuli</span>
+</code></pre>
+<p><em>This step has to be done after every code change so that the changes take place in the prepared Sakuli environment.</em></p>
+
+<a href="#updating-dependencies" id="updating-dependencies" style="color: inherit; text-decoration: none;">
+  <h2>Updating dependencies</h2>
+</a>
+<p>Long story short: <code>npm run update</code></p>
+<p>As this is a multi-module project using <a href="https://www.npmjs.com/package/lerna">lerna</a>, dependency updates have to be
+consistent for the whole project. To achieve this, we use the <a href="https://www.npmjs.com/package/lerna-update-wizard">lerna-update-wizard</a>
+and added the npm script <code>npm run update</code>.</p>
+
+<a href="#pre-commit-hooks" id="pre-commit-hooks" style="color: inherit; text-decoration: none;">
+  <h2>Pre-commit Hooks</h2>
+</a>
+<p>We are using <a href="https://github.com/prettier/prettier">Prettier</a> as an opinionated code formatter in combination with
+<a href="https://github.com/typicode/husky">husky</a> for the pre-commit hook.
+If you are using a node version manager, make sure to create <code>~/.huskyrc</code> with the following content:</p>
+<pre><code class="language-bash"><span class="hl-2"># ~/.huskyrc</span><br/><span class="hl-3">export</span><span class="hl-0"> NVM_DIR=</span><span class="hl-4">&quot;</span><span class="hl-5">$HOME</span><span class="hl-4">/.nvm&quot;</span><br/><span class="hl-0">[ -s </span><span class="hl-4">&quot;</span><span class="hl-5">$NVM_DIR</span><span class="hl-4">/nvm.sh&quot;</span><span class="hl-0"> ] &amp;&amp; </span><span class="hl-6">\.</span><span class="hl-0"> </span><span class="hl-4">&quot;</span><span class="hl-5">$NVM_DIR</span><span class="hl-4">/nvm.sh&quot;</span>
+</code></pre>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul></ul></nav></div></div></div><footer class=""><div class="container"><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="overlay"></div><script src="assets/main.js"></script></body></html>

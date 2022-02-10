@@ -1,371 +1,99 @@
-<!doctype html>
-<html class="default no-js">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@sakuli/core</title>
-	<meta name="description" content="Documentation for @sakuli/core">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<script async src="assets/js/search.js" id="search-script"></script>
-</head>
-<body>
-<header>
-	<div class="tsd-page-toolbar">
-		<div class="container">
-			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="index.html" class="title">@sakuli/core</a>
-				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-						</div>
-					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tsd-page-title">
-		<div class="container">
-			<h1>@sakuli/core</h1>
-		</div>
-	</div>
-</header>
-<div class="container container-main">
-	<div class="row">
-		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#sakuli-core" id="sakuli-core" style="color: inherit; text-decoration: none;">
-					<h1>sakuli-core</h1>
-				</a>
-				<a href="#basic-sakuli-flow" id="basic-sakuli-flow" style="color: inherit; text-decoration: none;">
-					<h2>basic Sakuli Flow</h2>
-				</a>
-				<a href="#bootstrap" id="bootstrap" style="color: inherit; text-decoration: none;">
-					<h3>bootstrap</h3>
-				</a>
-				<p><code>bootstrap</code> will find any preset registered to sakuli. If no preset is provided sakuli will register legacy preset by default</p>
-				<a href="#run" id="run" style="color: inherit; text-decoration: none;">
-					<h3>Run</h3>
-				</a>
-			</div>
-		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class=" ">
-						<a href="modules.html">Exports</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation secondary menu-sticky">
-				<ul class="before-current">
-					<li class=" tsd-kind-enum">
-						<a href="enums/logmode.html" class="tsd-kind-icon">Log<wbr>Mode</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/jsscriptexecutor.html" class="tsd-kind-icon">Js<wbr>Script<wbr>Executor</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/project.html" class="tsd-kind-icon">Project</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/sakulicoreproperties.html" class="tsd-kind-icon">Sakuli<wbr>Core<wbr>Properties</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/sakuliexecutioncontextprovider.html" class="tsd-kind-icon">Sakuli<wbr>Execution<wbr>Context<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/sakulirunner.html" class="tsd-kind-icon">Sakuli<wbr>Runner</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/testactioncontext.html" class="tsd-kind-icon">Test<wbr>Action<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/testcasecontext.html" class="tsd-kind-icon">Test<wbr>Case<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/testcontextentity.html" class="tsd-kind-icon">Test<wbr>Context<wbr>Entity</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/testcontextentitystates.html" class="tsd-kind-icon">Test<wbr>Context<wbr>Entity<wbr>States</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/testexecutioncontext.html" class="tsd-kind-icon">Test<wbr>Execution<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/teststepcontext.html" class="tsd-kind-icon">Test<wbr>Step<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/testsuitecontext.html" class="tsd-kind-icon">Test<wbr>Suite<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/commandmoduleprovider.html" class="tsd-kind-icon">Command<wbr>Module<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/finishedmeasurable.html" class="tsd-kind-icon">Finished<wbr>Measurable</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/forwarder.html" class="tsd-kind-icon">Forwarder</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/measurable.html" class="tsd-kind-icon">Measurable</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/projectloader.html" class="tsd-kind-icon">Project<wbr>Loader</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/sakulibootstrapoptions.html" class="tsd-kind-icon">Sakuli<wbr>Bootstrap<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/sakulicontextentityraw.html" class="tsd-kind-icon">Sakuli<wbr>Context<wbr>Entity<wbr>Raw</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/sakulicontexttestactionraw.html" class="tsd-kind-icon">Sakuli<wbr>Context<wbr>Test<wbr>Action<wbr>Raw</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/sakulicontexttestcaseraw.html" class="tsd-kind-icon">Sakuli<wbr>Context<wbr>Test<wbr>Case<wbr>Raw</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/sakulicontextteststepraw.html" class="tsd-kind-icon">Sakuli<wbr>Context<wbr>Test<wbr>Step<wbr>Raw</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/sakulicontexttestsuiteraw.html" class="tsd-kind-icon">Sakuli<wbr>Context<wbr>Test<wbr>Suite<wbr>Raw</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/sakuliexecutioncontext.html" class="tsd-kind-icon">Sakuli<wbr>Execution<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/sakulipresetprovider.html" class="tsd-kind-icon">Sakuli<wbr>Preset<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/sakulirunoptions.html" class="tsd-kind-icon">Sakuli<wbr>Run<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/startedmeasurable.html" class="tsd-kind-icon">Started<wbr>Measurable</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/testexecutionlifecyclehooks.html" class="tsd-kind-icon">Test<wbr>Execution<wbr>Lifecycle<wbr>Hooks</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/testfile.html" class="tsd-kind-icon">Test<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/testscriptexecutor.html" class="tsd-kind-icon">Test<wbr>Script<wbr>Executor</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#argv" class="tsd-kind-icon">Argv</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#commandmodule" class="tsd-kind-icon">Command<wbr>Module</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#sakuliinstance" class="tsd-kind-icon">Sakuli<wbr>Instance</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testactionchangelistener" class="tsd-kind-icon">Test<wbr>Action<wbr>Change<wbr>Listener</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testactionendlistener" class="tsd-kind-icon">Test<wbr>Action<wbr>End<wbr>Listener</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcasechangelistener" class="tsd-kind-icon">Test<wbr>Case<wbr>Change<wbr>Listener</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcaseendlistener" class="tsd-kind-icon">Test<wbr>Case<wbr>End<wbr>Listener</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcontextentitykind" class="tsd-kind-icon">Test<wbr>Context<wbr>Entity<wbr>Kind</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcontextentitystate" class="tsd-kind-icon">Test<wbr>Context<wbr>Entity<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcontextentitystatecritical" class="tsd-kind-icon">Test<wbr>Context<wbr>Entity<wbr>State<wbr>Critical</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcontextentitystateerror" class="tsd-kind-icon">Test<wbr>Context<wbr>Entity<wbr>State<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcontextentitystateok" class="tsd-kind-icon">Test<wbr>Context<wbr>Entity<wbr>State<wbr>Ok</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcontextentitystateunknown" class="tsd-kind-icon">Test<wbr>Context<wbr>Entity<wbr>State<wbr>Unknown</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcontextentitystatewarning" class="tsd-kind-icon">Test<wbr>Context<wbr>Entity<wbr>State<wbr>Warning</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcontextkindcase" class="tsd-kind-icon">Test<wbr>Context<wbr>Kind<wbr>Case</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcontextkindsaction" class="tsd-kind-icon">Test<wbr>Context<wbr>KindSAction</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcontextkindstep" class="tsd-kind-icon">Test<wbr>Context<wbr>Kind<wbr>Step</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testcontextkindsuite" class="tsd-kind-icon">Test<wbr>Context<wbr>Kind<wbr>Suite</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testexecutionchangelistener" class="tsd-kind-icon">Test<wbr>Execution<wbr>Change<wbr>Listener</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testexecutioncontexteventtypes" class="tsd-kind-icon">Test<wbr>Execution<wbr>Context<wbr>Event<wbr>Types</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#teststepchangelistener" class="tsd-kind-icon">Test<wbr>Step<wbr>Change<wbr>Listener</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#teststependlistener" class="tsd-kind-icon">Test<wbr>Step<wbr>End<wbr>Listener</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testsuitechangelistener" class="tsd-kind-icon">Test<wbr>Suite<wbr>Change<wbr>Listener</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#testsuiteendlistener" class="tsd-kind-icon">Test<wbr>Suite<wbr>End<wbr>Listener</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#end_execution" class="tsd-kind-icon">END_<wbr>EXECUTION</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#end_testaction" class="tsd-kind-icon">END_<wbr>TESTACTION</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#end_testcase" class="tsd-kind-icon">END_<wbr>TESTCASE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#end_teststep" class="tsd-kind-icon">END_<wbr>TESTSTEP</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#end_testsuite" class="tsd-kind-icon">END_<wbr>TESTSUITE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#start_execution" class="tsd-kind-icon">START_<wbr>EXECUTION</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#start_testaction" class="tsd-kind-icon">START_<wbr>TESTACTION</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#start_testcase" class="tsd-kind-icon">START_<wbr>TESTCASE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#start_teststep" class="tsd-kind-icon">START_<wbr>TESTSTEP</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#start_testsuite" class="tsd-kind-icon">START_<wbr>TESTSUITE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#sakulibootstrapdefaults" class="tsd-kind-icon">Sakuli<wbr>Bootstrap<wbr>Defaults</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#update_testaction" class="tsd-kind-icon">UPDATE_<wbr>TESTACTION</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#update_testcase" class="tsd-kind-icon">UPDATE_<wbr>TESTCASE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#update_teststep" class="tsd-kind-icon">UPDATE_<wbr>TESTSTEP</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#update_testsuite" class="tsd-kind-icon">UPDATE_<wbr>TESTSUITE</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#nodesignals" class="tsd-kind-icon">node<wbr>Signals</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#sakuli" class="tsd-kind-icon">Sakuli</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#bootstrap" class="tsd-kind-icon">bootstrap</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#findsakulipresets" class="tsd-kind-icon">find<wbr>Sakuli<wbr>Presets</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#getduration" class="tsd-kind-icon">get<wbr>Duration</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#getnodemodulespaths" class="tsd-kind-icon">get<wbr>Node<wbr>Modules<wbr>Paths</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#getpresetdeclarationfromfile" class="tsd-kind-icon">get<wbr>Preset<wbr>Declaration<wbr>From<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#getreadablestatename" class="tsd-kind-icon">get<wbr>Readable<wbr>State<wbr>Name</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isexistingdirectory" class="tsd-kind-icon">is<wbr>Existing<wbr>Directory</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isfinished" class="tsd-kind-icon">is<wbr>Finished</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#issakuliexecutioncontext" class="tsd-kind-icon">is<wbr>Sakuli<wbr>Execution<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#isstarted" class="tsd-kind-icon">is<wbr>Started</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#loadbootstrapoptions" class="tsd-kind-icon">load<wbr>Bootstrap<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#parselogmode" class="tsd-kind-icon">parse<wbr>Log<wbr>Mode</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#tojson" class="tsd-kind-icon">to<wbr>Json</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
-<footer>
-	<div class="container">
-		<h2>Legend</h2>
-		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-			</ul>
-		</div>
-	</div>
-</footer>
-<div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@sakuli/core</title><meta name="description" content="Documentation for @sakuli/core"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">@sakuli/core</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>@sakuli/core</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#sakuli2" id="sakuli2" style="color: inherit; text-decoration: none;">
+  <h1>Sakuli2</h1>
+</a>
+<p><a href="https://github.com/sakuli/sakuli/actions?query=workflow:%22Continuous+Delivery%22"><img src="https://github.com/sakuli/sakuli/workflows/Continuous%20Delivery/badge.svg" alt="Build Status"></a>
+<a href="https://sonarcloud.io/dashboard?id=sakuli%3Asakuli"><img src="https://sonarcloud.io/api/project_badges/measure?project=sakuli%3Asakuli&metric=alert_status" alt="Quality Gate Status"></a>
+<a href="https://sonarcloud.io/dashboard?id=sakuli%3Asakuli"><img src="https://sonarcloud.io/api/project_badges/measure?project=sakuli%3Asakuli&metric=coverage" alt="Coverage"></a></p>
+
+<a href="#why-sakuli-2" id="why-sakuli-2" style="color: inherit; text-decoration: none;">
+  <h2>Why Sakuli 2?</h2>
+</a>
+<p>In the past, we encountered a lot of issues with the architecture of Sakuli. But first and foremost the inactive
+development of Sahi and its deep integration into Sakuli was one of the main reasons to rethink our technology stack.</p>
+<p>So we decide to create a brand-new platform which allows users to test and monitor their systems and developers to extend
+the platform to their own needs.</p>
+
+<a href="#what-is-the-new-stack-of-sakuli2" id="what-is-the-new-stack-of-sakuli2" style="color: inherit; text-decoration: none;">
+  <h2>What is the new Stack of Sakuli2?</h2>
+</a>
+<p>We started to make a complete core code rewrite based on NodeJs and Typescript.</p>
+<ul>
+<li><strong>Node.js</strong> because we wanted the same language for our platform and testcases (Sakuli was written in Java while testcases where executed in a modified version of RhinoJs-Engine)</li>
+<li><strong>Typescript</strong> to provide clear interfaces for third-party devs.</li>
+</ul>
+<p>We also replaced the engines for web- and native checks:</p>
+<ul>
+<li><strong>Sahi</strong> is replaced by Webdriver / Selenium</li>
+<li><strong>Sikuli</strong> is replaced by <a href="https://github.com/nut-tree/nut.js">nut.js</a></li>
+</ul>
+<p>while we try our best to keep the sakuli api backwards compatible.</p>
+
+<a href="#what-can-i-expect-from-sakuli2" id="what-can-i-expect-from-sakuli2" style="color: inherit; text-decoration: none;">
+  <h2>What can I expect from Sakuli2...</h2>
+</a>
+
+<a href="#as-a-user--tester" id="as-a-user--tester" style="color: inherit; text-decoration: none;">
+  <h3>...as a user / tester</h3>
+</a>
+<p>Expect the full power of Sakuli, which means testing and monitoring systems either in web or native.</p>
+
+<a href="#as-a-developer" id="as-a-developer" style="color: inherit; text-decoration: none;">
+  <h3>...as a developer</h3>
+</a>
+<p>Use the full power of typescript, nodejs and their corresponding ecosystems.</p>
+
+<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+  <h1>Installation</h1>
+</a>
+<p>Please refer to the <a href="https://sakuli.io">Sakuli website</a> and the <a href="https://sakuli.io/docs/getting-started/">Getting Started</a> guide for installation instructions.</p>
+
+<a href="#development" id="development" style="color: inherit; text-decoration: none;">
+  <h1>Development</h1>
+</a>
+
+<a href="#workstation" id="workstation" style="color: inherit; text-decoration: none;">
+  <h2>Workstation</h2>
+</a>
+<p>To start developing Sakuli 2 some setup on your workstation is required.</p>
+<ul>
+<li>Make sure to have the active LTS version (v12) of node installed.</li>
+<li>Make sure to have docker installed and started</li>
+<li>Make sure to execute <code>docker pull selenium/standalone-chrome-debug</code> before you start developing.</li>
+</ul>
+
+<a href="#building-the-project" id="building-the-project" style="color: inherit; text-decoration: none;">
+  <h2>Building the Project</h2>
+</a>
+<p>In some situations, it is necessary to build/rebuild the sources (e.g. after changing branches) to create a consistent
+state in the project.</p>
+<p>To do so, please use <code>npm run rebuild</code></p>
+
+<a href="#executing-the-current-state-of-sakuli" id="executing-the-current-state-of-sakuli" style="color: inherit; text-decoration: none;">
+  <h2>Executing the current state of Sakuli</h2>
+</a>
+<p>During development, you might want to test the overall behavior of Sakuli from a developers&#39; perspective. Therefore, we
+created a <code>packages/integration-tests</code> module containing a Sakuli project using Sakuli at the current state of the
+repository.</p>
+<p>Build and execute Sakuli as it is in the current state of the repository:</p>
+<pre><code class="language-shell"><span class="hl-0">npm run rebuild</span><br/><span class="hl-1">cd</span><span class="hl-0"> packages/integration-tests</span><br/><span class="hl-0">npx sakuli</span>
+</code></pre>
+<p><em>This step has to be done after every code change so that the changes take place in the prepared Sakuli environment.</em></p>
+
+<a href="#updating-dependencies" id="updating-dependencies" style="color: inherit; text-decoration: none;">
+  <h2>Updating dependencies</h2>
+</a>
+<p>Long story short: <code>npm run update</code></p>
+<p>As this is a multi-module project using <a href="https://www.npmjs.com/package/lerna">lerna</a>, dependency updates have to be
+consistent for the whole project. To achieve this, we use the <a href="https://www.npmjs.com/package/lerna-update-wizard">lerna-update-wizard</a>
+and added the npm script <code>npm run update</code>.</p>
+
+<a href="#pre-commit-hooks" id="pre-commit-hooks" style="color: inherit; text-decoration: none;">
+  <h2>Pre-commit Hooks</h2>
+</a>
+<p>We are using <a href="https://github.com/prettier/prettier">Prettier</a> as an opinionated code formatter in combination with
+<a href="https://github.com/typicode/husky">husky</a> for the pre-commit hook.
+If you are using a node version manager, make sure to create <code>~/.huskyrc</code> with the following content:</p>
+<pre><code class="language-bash"><span class="hl-2"># ~/.huskyrc</span><br/><span class="hl-3">export</span><span class="hl-0"> NVM_DIR=</span><span class="hl-4">&quot;</span><span class="hl-5">$HOME</span><span class="hl-4">/.nvm&quot;</span><br/><span class="hl-0">[ -s </span><span class="hl-4">&quot;</span><span class="hl-5">$NVM_DIR</span><span class="hl-4">/nvm.sh&quot;</span><span class="hl-0"> ] &amp;&amp; </span><span class="hl-6">\.</span><span class="hl-0"> </span><span class="hl-4">&quot;</span><span class="hl-5">$NVM_DIR</span><span class="hl-4">/nvm.sh&quot;</span>
+</code></pre>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-enum"><a href="enums/LogMode.html" class="tsd-kind-icon">Log<wbr/>Mode</a></li><li class="tsd-kind-class"><a href="classes/JsScriptExecutor.html" class="tsd-kind-icon">Js<wbr/>Script<wbr/>Executor</a></li><li class="tsd-kind-class"><a href="classes/Project.html" class="tsd-kind-icon">Project</a></li><li class="tsd-kind-class"><a href="classes/SakuliCoreProperties.html" class="tsd-kind-icon">Sakuli<wbr/>Core<wbr/>Properties</a></li><li class="tsd-kind-class"><a href="classes/SakuliExecutionContextProvider.html" class="tsd-kind-icon">Sakuli<wbr/>Execution<wbr/>Context<wbr/>Provider</a></li><li class="tsd-kind-class"><a href="classes/SakuliRunner.html" class="tsd-kind-icon">Sakuli<wbr/>Runner</a></li><li class="tsd-kind-class"><a href="classes/TestActionContext.html" class="tsd-kind-icon">Test<wbr/>Action<wbr/>Context</a></li><li class="tsd-kind-class"><a href="classes/TestCaseContext.html" class="tsd-kind-icon">Test<wbr/>Case<wbr/>Context</a></li><li class="tsd-kind-class"><a href="classes/TestContextEntity.html" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Entity</a></li><li class="tsd-kind-class"><a href="classes/TestContextEntityStates.html" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Entity<wbr/>States</a></li><li class="tsd-kind-class"><a href="classes/TestExecutionContext.html" class="tsd-kind-icon">Test<wbr/>Execution<wbr/>Context</a></li><li class="tsd-kind-class"><a href="classes/TestStepContext.html" class="tsd-kind-icon">Test<wbr/>Step<wbr/>Context</a></li><li class="tsd-kind-class"><a href="classes/TestSuiteContext.html" class="tsd-kind-icon">Test<wbr/>Suite<wbr/>Context</a></li><li class="tsd-kind-interface"><a href="interfaces/CommandModuleProvider.html" class="tsd-kind-icon">Command<wbr/>Module<wbr/>Provider</a></li><li class="tsd-kind-interface"><a href="interfaces/FinishedMeasurable.html" class="tsd-kind-icon">Finished<wbr/>Measurable</a></li><li class="tsd-kind-interface"><a href="interfaces/Forwarder.html" class="tsd-kind-icon">Forwarder</a></li><li class="tsd-kind-interface"><a href="interfaces/Measurable.html" class="tsd-kind-icon">Measurable</a></li><li class="tsd-kind-interface"><a href="interfaces/ProjectLoader.html" class="tsd-kind-icon">Project<wbr/>Loader</a></li><li class="tsd-kind-interface"><a href="interfaces/SakuliBootstrapOptions.html" class="tsd-kind-icon">Sakuli<wbr/>Bootstrap<wbr/>Options</a></li><li class="tsd-kind-interface"><a href="interfaces/SakuliContextEntityRaw.html" class="tsd-kind-icon">Sakuli<wbr/>Context<wbr/>Entity<wbr/>Raw</a></li><li class="tsd-kind-interface"><a href="interfaces/SakuliContextTestActionRaw.html" class="tsd-kind-icon">Sakuli<wbr/>Context<wbr/>Test<wbr/>Action<wbr/>Raw</a></li><li class="tsd-kind-interface"><a href="interfaces/SakuliContextTestCaseRaw.html" class="tsd-kind-icon">Sakuli<wbr/>Context<wbr/>Test<wbr/>Case<wbr/>Raw</a></li><li class="tsd-kind-interface"><a href="interfaces/SakuliContextTestStepRaw.html" class="tsd-kind-icon">Sakuli<wbr/>Context<wbr/>Test<wbr/>Step<wbr/>Raw</a></li><li class="tsd-kind-interface"><a href="interfaces/SakuliContextTestSuiteRaw.html" class="tsd-kind-icon">Sakuli<wbr/>Context<wbr/>Test<wbr/>Suite<wbr/>Raw</a></li><li class="tsd-kind-interface"><a href="interfaces/SakuliExecutionContext.html" class="tsd-kind-icon">Sakuli<wbr/>Execution<wbr/>Context</a></li><li class="tsd-kind-interface"><a href="interfaces/SakuliPresetProvider.html" class="tsd-kind-icon">Sakuli<wbr/>Preset<wbr/>Provider</a></li><li class="tsd-kind-interface"><a href="interfaces/SakuliRunOptions.html" class="tsd-kind-icon">Sakuli<wbr/>Run<wbr/>Options</a></li><li class="tsd-kind-interface"><a href="interfaces/StartedMeasurable.html" class="tsd-kind-icon">Started<wbr/>Measurable</a></li><li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/TestExecutionLifecycleHooks.html" class="tsd-kind-icon">Test<wbr/>Execution<wbr/>Lifecycle<wbr/>Hooks</a></li><li class="tsd-kind-interface"><a href="interfaces/TestFile.html" class="tsd-kind-icon">Test<wbr/>File</a></li><li class="tsd-kind-interface"><a href="interfaces/TestScriptExecutor.html" class="tsd-kind-icon">Test<wbr/>Script<wbr/>Executor</a></li><li class="tsd-kind-type-alias"><a href="modules.html#Argv" class="tsd-kind-icon">Argv</a></li><li class="tsd-kind-type-alias"><a href="modules.html#CommandModule" class="tsd-kind-icon">Command<wbr/>Module</a></li><li class="tsd-kind-type-alias"><a href="modules.html#SakuliInstance" class="tsd-kind-icon">Sakuli<wbr/>Instance</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestActionChangeListener" class="tsd-kind-icon">Test<wbr/>Action<wbr/>Change<wbr/>Listener</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestActionEndListener" class="tsd-kind-icon">Test<wbr/>Action<wbr/>End<wbr/>Listener</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestCaseChangeListener" class="tsd-kind-icon">Test<wbr/>Case<wbr/>Change<wbr/>Listener</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestCaseEndListener" class="tsd-kind-icon">Test<wbr/>Case<wbr/>End<wbr/>Listener</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestContextEntityKind" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Entity<wbr/>Kind</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestContextEntityState" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Entity<wbr/>State</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestContextEntityStateCritical" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Entity<wbr/>State<wbr/>Critical</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestContextEntityStateError" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Entity<wbr/>State<wbr/>Error</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestContextEntityStateOk" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Entity<wbr/>State<wbr/>Ok</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestContextEntityStateUnknown" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Entity<wbr/>State<wbr/>Unknown</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestContextEntityStateWarning" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Entity<wbr/>State<wbr/>Warning</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestContextKindCase" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Kind<wbr/>Case</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestContextKindSAction" class="tsd-kind-icon">Test<wbr/>Context<wbr/>KindSAction</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestContextKindStep" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Kind<wbr/>Step</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestContextKindSuite" class="tsd-kind-icon">Test<wbr/>Context<wbr/>Kind<wbr/>Suite</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestExecutionChangeListener" class="tsd-kind-icon">Test<wbr/>Execution<wbr/>Change<wbr/>Listener</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestExecutionContextEventTypes" class="tsd-kind-icon">Test<wbr/>Execution<wbr/>Context<wbr/>Event<wbr/>Types</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestStepChangeListener" class="tsd-kind-icon">Test<wbr/>Step<wbr/>Change<wbr/>Listener</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestStepEndListener" class="tsd-kind-icon">Test<wbr/>Step<wbr/>End<wbr/>Listener</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestSuiteChangeListener" class="tsd-kind-icon">Test<wbr/>Suite<wbr/>Change<wbr/>Listener</a></li><li class="tsd-kind-type-alias"><a href="modules.html#TestSuiteEndListener" class="tsd-kind-icon">Test<wbr/>Suite<wbr/>End<wbr/>Listener</a></li><li class="tsd-kind-variable"><a href="modules.html#END_EXECUTION" class="tsd-kind-icon">END_<wbr/>EXECUTION</a></li><li class="tsd-kind-variable"><a href="modules.html#END_TESTACTION" class="tsd-kind-icon">END_<wbr/>TESTACTION</a></li><li class="tsd-kind-variable"><a href="modules.html#END_TESTCASE" class="tsd-kind-icon">END_<wbr/>TESTCASE</a></li><li class="tsd-kind-variable"><a href="modules.html#END_TESTSTEP" class="tsd-kind-icon">END_<wbr/>TESTSTEP</a></li><li class="tsd-kind-variable"><a href="modules.html#END_TESTSUITE" class="tsd-kind-icon">END_<wbr/>TESTSUITE</a></li><li class="tsd-kind-variable"><a href="modules.html#START_EXECUTION" class="tsd-kind-icon">START_<wbr/>EXECUTION</a></li><li class="tsd-kind-variable"><a href="modules.html#START_TESTACTION" class="tsd-kind-icon">START_<wbr/>TESTACTION</a></li><li class="tsd-kind-variable"><a href="modules.html#START_TESTCASE" class="tsd-kind-icon">START_<wbr/>TESTCASE</a></li><li class="tsd-kind-variable"><a href="modules.html#START_TESTSTEP" class="tsd-kind-icon">START_<wbr/>TESTSTEP</a></li><li class="tsd-kind-variable"><a href="modules.html#START_TESTSUITE" class="tsd-kind-icon">START_<wbr/>TESTSUITE</a></li><li class="tsd-kind-variable"><a href="modules.html#SakuliBootstrapDefaults" class="tsd-kind-icon">Sakuli<wbr/>Bootstrap<wbr/>Defaults</a></li><li class="tsd-kind-variable"><a href="modules.html#UPDATE_TESTACTION" class="tsd-kind-icon">UPDATE_<wbr/>TESTACTION</a></li><li class="tsd-kind-variable"><a href="modules.html#UPDATE_TESTCASE" class="tsd-kind-icon">UPDATE_<wbr/>TESTCASE</a></li><li class="tsd-kind-variable"><a href="modules.html#UPDATE_TESTSTEP" class="tsd-kind-icon">UPDATE_<wbr/>TESTSTEP</a></li><li class="tsd-kind-variable"><a href="modules.html#UPDATE_TESTSUITE" class="tsd-kind-icon">UPDATE_<wbr/>TESTSUITE</a></li><li class="tsd-kind-variable"><a href="modules.html#nodeSignals" class="tsd-kind-icon">node<wbr/>Signals</a></li><li class="tsd-kind-function"><a href="modules.html#Sakuli" class="tsd-kind-icon">Sakuli</a></li><li class="tsd-kind-function"><a href="modules.html#bootstrap" class="tsd-kind-icon">bootstrap</a></li><li class="tsd-kind-function"><a href="modules.html#findSakuliPresets" class="tsd-kind-icon">find<wbr/>Sakuli<wbr/>Presets</a></li><li class="tsd-kind-function"><a href="modules.html#getDuration" class="tsd-kind-icon">get<wbr/>Duration</a></li><li class="tsd-kind-function"><a href="modules.html#getNodeModulesPaths" class="tsd-kind-icon">get<wbr/>Node<wbr/>Modules<wbr/>Paths</a></li><li class="tsd-kind-function"><a href="modules.html#getPresetDeclarationFromFile" class="tsd-kind-icon">get<wbr/>Preset<wbr/>Declaration<wbr/>From<wbr/>File</a></li><li class="tsd-kind-function"><a href="modules.html#getReadableStateName" class="tsd-kind-icon">get<wbr/>Readable<wbr/>State<wbr/>Name</a></li><li class="tsd-kind-function"><a href="modules.html#isExistingDirectory" class="tsd-kind-icon">is<wbr/>Existing<wbr/>Directory</a></li><li class="tsd-kind-function"><a href="modules.html#isFinished" class="tsd-kind-icon">is<wbr/>Finished</a></li><li class="tsd-kind-function"><a href="modules.html#isSakuliExecutionContext" class="tsd-kind-icon">is<wbr/>Sakuli<wbr/>Execution<wbr/>Context</a></li><li class="tsd-kind-function"><a href="modules.html#isStarted" class="tsd-kind-icon">is<wbr/>Started</a></li><li class="tsd-kind-function"><a href="modules.html#loadBootstrapOptions" class="tsd-kind-icon">load<wbr/>Bootstrap<wbr/>Options</a></li><li class="tsd-kind-function"><a href="modules.html#parseLogMode" class="tsd-kind-icon">parse<wbr/>Log<wbr/>Mode</a></li><li class="tsd-kind-function"><a href="modules.html#toJson" class="tsd-kind-icon">to<wbr/>Json</a></li></ul></nav></div></div></div><footer class=""><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li><li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li><li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li><li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li><li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li><li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="overlay"></div><script src="assets/main.js"></script></body></html>
